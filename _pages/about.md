@@ -6,30 +6,31 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a master’s student at the [Division of Sports Science and Physical Education](https://www.thsports.tsinghua.edu.cn/index.htm) and the [McGovern Institute for Brain Research at Tsinghua University](https://mcgovern.life.tsinghua.edu.cn/ch). My professional and research interests are physical activity, public health, and meta-research.  
+I'm a master’s student at the [Division of Sports Science and Physical Education](https://www.thsports.tsinghua.edu.cn/index.htm) and the [McGovern Institute for Brain Research](https://mcgovern.life.tsinghua.edu.cn/ch) at **Tsinghua University**. My professional and research interests are physical activity, public health, and meta-research.  
 📧 [Email: chencf6@163.com](chencf6@163.com)  
 🐱 [Github](https://github.com/Chaofan-Chen-1rC)  
 
-
-A data-driven personal website
+🎓 Education
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+- _2024.09 - Now_, M.Sc. in Sports Science and Physical Education, [Tsinghua University](https://www.thsports.tsinghua.edu.cn/index.htm) & [McGovern Institute for Brain Research](https://mcgovern.life.tsinghua.edu.cn/ch), Beijing.
+- _2020.09 - 2024.06_, B.Sc. in Sports Science, **Beijing Sport University**, Beijing.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
-
-Getting started
+📚 Publications
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+**Effects of various exercise types on inflammatory response in individuals with overweight and obesity: a systematic review and network meta-analysis of randomized controlled trials.**  
+**Chen C**, Zhang D, Ye M, You Y, Song Y, Chen X.  
+International Journal of Obesity. 2025 Feb;49(2):214–225.
+https://doi.org/10.1038/s41366-024-01649-6
+
+**陈超凡**, 陈晓可, 宋以玲, 等.
+运动干预对超重或肥胖个体慢性炎症反应影响的系统综述和Meta分析.
+中国运动医学杂志, 2025, 44(03): 225–236.
+https://doi.org/10.16038/j.1000-6710.2025.03.002
+
+**Life's Essential 8 and Depression: A National Cross-Sectional Analysis in US Emerging Adults.**
+You Y, Zheng K, Ablitip A, Wang D, **Chen C**, Liu Y, Chen Y, Ma X.
+Journal of Adolescent Health. 2025 Jul;77(1):84–93.
+https://doi.org/10.1016/j.jadohealth.2025.03.023
 
 Site-wide configuration
 ------
