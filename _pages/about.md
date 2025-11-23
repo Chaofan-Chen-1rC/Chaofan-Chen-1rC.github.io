@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 I'm a master’s student at the [Division of Sports Science and Physical Education](https://www.thsports.tsinghua.edu.cn/index.htm) and the [McGovern Institute for Brain Research](https://mcgovern.life.tsinghua.edu.cn/ch) at **Tsinghua University**.  
-My professional and research interests are 
+
+My professional and research interests are:  
 - physical activity and health outcomes.
 - systematic review and meta-research.
 - cooling and performance in the heat.
