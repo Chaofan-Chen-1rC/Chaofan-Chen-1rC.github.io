@@ -45,8 +45,6 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
   </tr>
 </table>
 
-<br>
-
 <table>
   <tr>
     <td width="280">
@@ -58,12 +56,10 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
       </a><br>
       <b>陈超凡</b>, 陈晓可, 宋以玲, 等.<br>
       <i>中国运动医学杂志</i>, 2025, 44(03):225–236.<br>
-      <strong>Impact factor</strong>: 1.69 &nbsp;&nbsp;<span style="color:green;">✔ 已发表</span>
+      <strong>Impact factor</strong>: 1.69 &nbsp;&nbsp;<span style="color:green;">✔ published </span>
     </td>
   </tr>
 </table>
-
-<br>
 
 <table>
   <tr>
