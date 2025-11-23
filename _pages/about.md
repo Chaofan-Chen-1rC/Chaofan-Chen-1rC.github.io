@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Biography"
+title: "Personal profile"
 author_profile: true
 redirect_from: 
   - /about/
@@ -8,14 +8,14 @@ redirect_from:
 ---
 I'm a master’s student at the [Division of Sports Science and Physical Education](https://www.thsports.tsinghua.edu.cn/index.htm) and the [McGovern Institute for Brain Research](https://mcgovern.life.tsinghua.edu.cn/ch) at **Tsinghua University**. My professional and research interests are physical activity, public health, and meta-research.  
 📧 [Email: chencf6@163.com](chencf6@163.com)  
-🐱 [Github](https://github.com/Chaofan-Chen-1rC)  
+<img src="/images/logo_github.png" width="18"/> [Github](https://github.com/Chaofan-Chen-1rC)  
 
-🎓 Education
+Education
 ======
-- _2024.09 - Now_, M.Sc. in Sports Science and Physical Education, [Tsinghua University](https://www.thsports.tsinghua.edu.cn/index.htm) & [McGovern Institute for Brain Research](https://mcgovern.life.tsinghua.edu.cn/ch), Beijing.
-- _2020.09 - 2024.06_, B.Sc. in Sports Science, **Beijing Sport University**, Beijing.
+- _2024.09 - Now_, M.Sc. Devision of Sports Science and Physical Education & McGovern Institute for Brain Research at **Tsinghua University**, Beijing.
+- _2020.09 - 2024.06_, B.Sc. School of Sports Science, **Beijing Sport University**, Beijing.
 
-📄 Publications
+Publications
 ======
 <table>
   <tr>
