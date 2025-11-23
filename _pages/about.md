@@ -17,21 +17,6 @@ I'm a master’s student at the [Division of Sports Science and Physical Educati
 
 📄 Publications
 ======
-**Effects of various exercise types on inflammatory response in individuals with overweight and obesity: a systematic review and network meta-analysis of randomized controlled trials.**  
-**Chen C**, Zhang D, Ye M, You Y, Song Y, Chen X.  
-International Journal of Obesity. 2025 Feb;49(2):214–225.
-https://doi.org/10.1038/s41366-024-01649-6
-
-**陈超凡**, 陈晓可, 宋以玲, 等.
-运动干预对超重或肥胖个体慢性炎症反应影响的系统综述和Meta分析.
-中国运动医学杂志, 2025, 44(03): 225–236.
-https://doi.org/10.16038/j.1000-6710.2025.03.002
-
-**Life's Essential 8 and Depression: A National Cross-Sectional Analysis in US Emerging Adults.**
-You Y, Zheng K, Ablitip A, Wang D, **Chen C**, Liu Y, Chen Y, Ma X.
-Journal of Adolescent Health. 2025 Jul;77(1):84–93.
-https://doi.org/10.1016/j.jadohealth.2025.03.023  
-
 <table>
   <tr>
     <td width="280">
@@ -43,7 +28,43 @@ https://doi.org/10.1016/j.jadohealth.2025.03.023
       </a><br>
       <b>Chen C</b>, Zhang D, Ye M, You Y, Song Y, Chen X.<br>
       <i>International Journal of Obesity</i>, 2025, 49(2):214-225.<br>
-      📄 SCI Journal &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+      <strong>Impact factor</strong>: 4.2 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table>
+  <tr>
+    <td width="280">
+      <img src="/images/paper2.png" width="250">
+    </td>
+    <td>
+      <a href="https://doi.org/10.16038/j.1000-6710.2025.03.002">
+        <b>运动干预对超重或肥胖个体慢性炎症反应影响的系统综述和Meta分析</b>
+      </a><br>
+      <b>陈超凡</b>, 陈晓可, 宋以玲, 等.<br>
+      <i>中国运动医学杂志</i>, 2025, 44(03):225–236.<br>
+      <strong>Impact factor</strong>: 1.69 &nbsp;&nbsp;<span style="color:green;">✔ 已发表</span>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table>
+  <tr>
+    <td width="280">
+      <img src="/images/paper3.png" width="250">
+    </td>
+    <td>
+      <a href="https://doi.org/10.1016/j.jadohealth.2025.03.023">
+        <b>Life's Essential 8 and Depression: A National Cross-Sectional Analysis in US Emerging Adults</b>
+      </a><br>
+      You Y, Zheng K, Ablitip A, Wang D, <b>Chen C</b>, Liu Y, Chen Y, Ma X.<br>
+      <i>Journal of Adolescent Health</i>, 2025 Jul;77(1):84–93.<br>
+      <strong>Impact factor</strong>: 3.95 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
     </td>
   </tr>
 </table>
