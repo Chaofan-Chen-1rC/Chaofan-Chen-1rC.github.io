@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "<img src='/images/personal profile logo.png' width='20' style='vertical-align: middle;'> "Personal profile"
+title: 👤 "Personal profile"
 author_profile: true
 redirect_from: 
   - /about/
