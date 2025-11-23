@@ -61,7 +61,6 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 </style>
 
 <br>
-<br>
 
 📑 Publications
 ======
