@@ -35,7 +35,7 @@ https://doi.org/10.1016/j.jadohealth.2025.03.023
 <table>
   <tr>
     <td width="280">
-      <img src="profile.png" width="250">
+      <img src="images/profile.png." width="250">
     </td>
     <td>
       <a href="https://doi.org/10.1038/s41366-024-01649-6">
