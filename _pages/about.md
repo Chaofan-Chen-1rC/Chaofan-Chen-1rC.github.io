@@ -6,8 +6,10 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a master’s student at the [Division of Sports Science and Physical Education](https://www.thsports.tsinghua.edu.cn/index.htm) and the [McGovern Institute for Brain Research at Tsinghua University](https://mcgovern.life.tsinghua.edu.cn/ch). My professional and research interests are physical activity, public health, and meta-research. 
-[Email(mailto:XX@stu.pku.edu.cn)/[Github](https://github.com/QiuDi233)/[cSDN](https://blog.csdn.netgd1813100174?spm=1000.2115.3001.5343)
+I'm a master’s student at the [Division of Sports Science and Physical Education](https://www.thsports.tsinghua.edu.cn/index.htm) and the [McGovern Institute for Brain Research at Tsinghua University](https://mcgovern.life.tsinghua.edu.cn/ch). My professional and research interests are physical activity, public health, and meta-research.  
+📧 [Email: chencf6@163.com](chencf6@163.com)  
+🐱 [Github](https://github.com/Chaofan-Chen-1rC)  
+
 
 A data-driven personal website
 ======
