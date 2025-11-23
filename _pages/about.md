@@ -27,6 +27,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 
 <br>
 
+<p style="display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;">
 <h2>Research area keywords</h2>
 
 <div class="keyword-container">
@@ -58,9 +59,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
   box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
 }
 </style>
-
-
-<br>
+</p>
 
 📑 Publications
 ======
