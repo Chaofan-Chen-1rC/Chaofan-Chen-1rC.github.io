@@ -27,7 +27,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 
 <br>
 
-<h1><img src="/images/keywords.png" width="250">keywords</h1>
+<h1>🔑 keywords</h1>
 
 <div class="keyword-container">
   <span class="keyword">Physical Activity</span>
