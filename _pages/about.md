@@ -22,8 +22,8 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 
 🎓 Education
 ======
-- <img src="/images/Tsinghua logo.png" width="20"> _2024.09 - Now_, M.Sc. Devision of Sports Science and Physical Education & McGovern Institute for Brain Research at **Tsinghua University**, Beijing.
-- <img src="/images/beijing sport uni.png" width="20"> _2020.09 - 2024.06_, B.Sc. School of Sports Science, **Beijing Sport University**, Beijing.
+<img src="/images/Tsinghua logo.png" width="20"> _2024.09 - Now_, M.Sc. Devision of Sports Science and Physical Education & McGovern Institute for Brain Research at **Tsinghua University**, Beijing.  
+<img src="/images/beijing sport uni.png" width="20"> _2020.09 - 2024.06_, B.Sc. School of Sports Science, **Beijing Sport University**, Beijing.
 
 <br>
 
