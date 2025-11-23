@@ -27,6 +27,40 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 
 <br>
 
+<h2>Research area keywords</h2>
+
+<div class="keyword-container">
+  <span class="keyword">Physical Activity</span>
+  <span class="keyword">Obesity</span>
+  <span class="keyword">Cooling Strategy</span>
+  <span class="keyword">Meta-analysis</span>
+  <span class="keyword">Exercise Physiology</span>
+  <span class="keyword">Public Health</span>
+  <span class="keyword">Sleep</span>
+  <span class="keyword">Cognitive Function</span>
+</div>
+
+<style>
+.keyword-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.keyword {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+}
+</style>
+
+<br>
+
 📑 Publications
 ======
 <table>
