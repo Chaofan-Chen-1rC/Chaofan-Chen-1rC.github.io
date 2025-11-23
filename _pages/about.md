@@ -10,12 +10,12 @@ I'm a master’s student at the [Division of Sports Science and Physical Educati
 📧 [Email: chencf6@163.com](chencf6@163.com)  
 <img src="/images/logo_github.png" width="18"/> [Github](https://github.com/Chaofan-Chen-1rC)  
 
-<img src='/images/education logo.png' width='20' style='vertical-align: middle;'> Education
+🎓 Education
 ======
 - _2024.09 - Now_, M.Sc. Devision of Sports Science and Physical Education & McGovern Institute for Brain Research at **Tsinghua University**, Beijing.
 - _2020.09 - 2024.06_, B.Sc. School of Sports Science, **Beijing Sport University**, Beijing.
 
-Publications
+📑 Publications
 ======
 <table>
   <tr>
