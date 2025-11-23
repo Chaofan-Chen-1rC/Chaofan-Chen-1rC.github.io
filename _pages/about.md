@@ -6,9 +6,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a master’s student at the [Division of Sports Science and Physical Education](https://www.thsports.tsinghua.edu.cn/index.htm) and the [McGovern Institute for Brain Research](https://mcgovern.life.tsinghua.edu.cn/ch) at **Tsinghua University**. My professional and research interests are physical activity, public health, and meta-research.  
-📧 [Email: chencf6@163.com](chencf6@163.com)  
-<img src="/images/logo_github.png" width="18"/> [Github](https://github.com/Chaofan-Chen-1rC)  
+I'm a master’s student at the [Division of Sports Science and Physical Education](https://www.thsports.tsinghua.edu.cn/index.htm) and the [McGovern Institute for Brain Research](https://mcgovern.life.tsinghua.edu.cn/ch) at **Tsinghua University**.  
+My professional and research interests are 
+- physical activity and health outcomes.
+- systematic review and meta-research.
+- cooling and performance in the heat.
+- sleep, mental health and cognitive function.
+My research focuses on the health effects and evidence synthesis of physical activity interventions across populations. I am particularly interested in using meta-analysis, network meta-analysis, and systematic reviews to evaluate how various types of exercise impact metabolic and visceral adipose tissue in individuals with overweight or obesity.
+Recently, I have been expanding my work toward various cooling strategies and exercise performance in the heat, exploring how environmental stressors and thermoregulatory interventions influence athletic performance and physiological responses. This line of work integrates exercise physiology, environmental health, and performance science.  
+I'm open to collaboration and scientific exchange. You can reach me at **chencf6@163.com** or check out my projects on [Reaserchgate](https://www.researchgate.net/profile/Chaofan-Chen-16?ev=hdr_xprf).
 
 <br>
 
