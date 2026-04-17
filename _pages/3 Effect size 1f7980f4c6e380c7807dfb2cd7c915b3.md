@@ -1,6 +1,6 @@
 ---
 title: "Effect Size"
-date: 2026-04-17
+date: 2025-05-28
 permalink: /reading-notes/dmar-note-05/
 tags:
   - meta-analysis
@@ -9,22 +9,7 @@ tags:
   - doing-meta-analysis-in-r
 ---
 
-<aside>
-
-***Author: Chaofan Chen***
-
-***Date: 2025-05-28 ~ 05-30***
-
-</aside>
-
-> **紫色部分是原本不懂但是现在懂了。**
-> 
-
-<aside>
-
 In meta-analyses, studies instead of individuals become the fundamental units of our analysis.独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
-
-</aside>
 
 # 1. Effect size
 
