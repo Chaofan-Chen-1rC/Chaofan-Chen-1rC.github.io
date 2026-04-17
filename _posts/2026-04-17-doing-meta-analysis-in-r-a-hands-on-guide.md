@@ -34,7 +34,7 @@ I want to use this space to:
 - [6 森林图]({{ '/assets/pdf/6-Forest-Plots.pdf' | relative_url }})
 - [7 亚组分析]({{ '/assets/pdf/7-Subgroupanalysis.pdf' | relative_url }})
 - [8 Meta 回归](/reading-notes/dmar-note-08/)
-- [9 发表偏倚](/reading-notes/dmar-note-09/)
+- [9 发表偏倚](/reading-notes/dmar-note-08/)
 
 ### 高级方法
 
