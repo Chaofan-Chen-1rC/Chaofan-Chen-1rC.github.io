@@ -22,6 +22,8 @@ I want to use this space to:
 
 ## Planned notes
 
+### 基本内容
+
 - [Welcome!](/reading-notes/dmar-note-01/)
 - [入门](/reading-notes/dmar-note-02/)
 - [1 引言](/reading-notes/dmar-note-03/)
@@ -40,7 +42,9 @@ I want to use this space to:
 - 11 结构方程模型 Meta 分析
 - 12 网络 Meta 分析
 - 13 贝叶斯 Meta 分析
-- 实用工具
+
+### 实用工具
+
 - 14 功效分析
 - [15 偏倚风险图]({{ '/assets/pdf/15-Risk-of-Bias-Plots.pdf' | relative_url }})
 - 16 报告与可重复性
