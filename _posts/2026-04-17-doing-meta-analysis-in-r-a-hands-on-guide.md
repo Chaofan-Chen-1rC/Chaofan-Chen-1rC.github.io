@@ -28,7 +28,7 @@ I want to use this space to:
 - [2 探索 R]({{ '/assets/pdf/Discovering-R.pdf' | relative_url }})
 - [3 效应量](/reading-notes/dmar-note-05/)
 - [4 合并效应量]({{ '/assets/pdf/4-Pooling-Effect-Sizes.pdf' | relative_url }})
-- 5 研究间异质性
+- [5 研究间异质性]({{ '/assets/pdf/4-Between-Study-Heterogeneity.pdf' | relative_url }})
 - 6 森林图
 - 7 亚组分析
 - 8 Meta 回归
