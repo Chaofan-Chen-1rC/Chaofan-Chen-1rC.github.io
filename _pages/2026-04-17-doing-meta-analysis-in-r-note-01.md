@@ -15,8 +15,6 @@ This is the first note in my reading series on *Doing Meta-Analysis in R: A Hand
 
 来源页面：[https://doing-meta.guide/](https://doing-meta.guide/)
 
-以下内容为页面可见内容的中文译文，并尽量保留了原页面的结构与链接。
-
 ## 站点目录
 
 - 欢迎！
