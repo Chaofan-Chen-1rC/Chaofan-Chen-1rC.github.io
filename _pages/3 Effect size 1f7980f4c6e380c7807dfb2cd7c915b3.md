@@ -9,7 +9,8 @@ tags:
   - doing-meta-analysis-in-r
 ---
 
-In meta-analyses, studies instead of individuals become the fundamental units of our analysis.独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
+In meta-analyses, studies instead of individuals become the fundamental units of our analysis.
+独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
 
 # 1. Effect size
 
