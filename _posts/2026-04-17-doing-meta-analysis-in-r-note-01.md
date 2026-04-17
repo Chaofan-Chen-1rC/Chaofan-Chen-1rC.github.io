@@ -1,5 +1,5 @@
 ---
-title: "Doing Meta-Analysis in R | Note 1: Overview and Workflow"
+title: "Doing Meta-Analysis in R | Note 1: Welcome!"
 date: 2026-04-17
 permalink: /posts/2026/04/doing-meta-analysis-in-r-note-01/
 tags:
