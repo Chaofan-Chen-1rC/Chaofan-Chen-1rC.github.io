@@ -43,7 +43,7 @@ $$
 \hat{\theta}_k
 $$
 
-But why does $\hat{\theta}_k$ differ from $\theta_k$? because of the **`Sampling error`**, which can be symbolized as：
+But why does $$\hat{\theta}_k$$ differ from $$\theta_k$$? because of the **`Sampling error`**, which can be symbolized as：
 
 $$
 \epsilon_k
