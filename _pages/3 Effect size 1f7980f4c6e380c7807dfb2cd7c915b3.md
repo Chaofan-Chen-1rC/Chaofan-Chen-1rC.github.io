@@ -61,7 +61,6 @@ But why does `$\hat{\theta}_k$`   differ from `${\theta}_k$`? because of the *
 
 $$
 \epsilon_k
-
 $$
 
 Well, Put simply, `$\hat{\theta}_k$`  is, therefore, the same as：
