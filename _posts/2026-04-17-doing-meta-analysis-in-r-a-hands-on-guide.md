@@ -32,8 +32,8 @@ I want to use this space to:
 - [6 森林图]({{ '/assets/pdf/6-Forest-Plots.pdf' | relative_url }})
 - [7 亚组分析]({{ '/assets/pdf/7-Subgroupanalysis.pdf' | relative_url }})
 - 8 Meta 回归
-- 9 发表偏倚
-高级方法
+- 9 发表偏倚  
+高级方法  
 - 10 “多层级”Meta 分析
 - 11 结构方程模型 Meta 分析
 - 12 网络 Meta 分析
