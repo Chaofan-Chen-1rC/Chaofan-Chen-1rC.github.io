@@ -25,7 +25,7 @@ I want to use this space to:
 - [Welcome!](/reading-notes/dmar-note-01/)
 - [入门](/reading-notes/dmar-note-02/)
 - [1 引言](/reading-notes/dmar-note-03/)
-- 2 探索 R
+- [2 探索 R]({{ '/assets/pdf/Discovering-R.pdf' | relative_url }})
 - R 中的 Meta 分析
 - 3 效应量
 - 4 合并效应量
