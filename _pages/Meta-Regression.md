@@ -10,7 +10,7 @@ tags:
 ---
 
 <a id="sec-8"></a>
-# 8 元回归内容
+# 8 元回归
 
 来源页面：[https://doing-meta.guide/metareg.html](https://doing-meta.guide/metareg.html)
 
