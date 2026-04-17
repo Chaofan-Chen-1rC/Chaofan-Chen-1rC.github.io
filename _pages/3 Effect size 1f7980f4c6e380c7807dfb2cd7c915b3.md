@@ -12,7 +12,7 @@ tags:
 In meta-analyses, studies instead of individuals become the fundamental units of our analysis.
 独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
 
-# 1. Effect size
+# 1. Effect size. 
 
 每项研究会提供一个（多个）效应量，我们的目的是计算每个研究的效应量，并在后续将它们合并，注意，效应量的选择会影响meta分析的结果和可解释性。
 
