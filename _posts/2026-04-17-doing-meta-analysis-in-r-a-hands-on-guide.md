@@ -22,7 +22,7 @@ I want to use this space to:
 
 ## Planned notes
 
-- [Note 1: Overview and workflow](/posts/2026/04/doing-meta-analysis-in-r-note-01/)
+- [Note 1: Overview and workflow](/reading-notes/dmar-note-01/)
 - [Note 2: Effect sizes and data preparation](/posts/2026/04/doing-meta-analysis-in-r-note-02/)
 - Note 3: Models and heterogeneity
 - Note 4: Publication bias and diagnostics
