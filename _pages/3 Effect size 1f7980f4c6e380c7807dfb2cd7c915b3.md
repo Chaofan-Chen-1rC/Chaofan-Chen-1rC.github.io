@@ -69,7 +69,7 @@ $$
 
 <aside>
 
-Meta-analysis 考虑了对 $$\theta_k$$ 估计的精确度，所以我们给**拥有更高精确度**（更小 $$\epsilon_k$$）的效应量的研究**更大的权重**，因为这些研究提供了对 $$\theta_k$$ 更精确的估计 ([L. Hedges and Olkin 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-hedges2014statistical)) 
+Meta-analysis 考虑了对 $$\theta_k$$ 估计的精确度，所以我们给 **拥有更高精确度** （更小 $$\epsilon_k$$）的效应量的研究 **更大的权重**，因为这些研究提供了对 $$\theta_k$$ 更精确的估计 [L. Hedges and Olkin 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-hedges2014statistical) 
 
 </aside>
 
