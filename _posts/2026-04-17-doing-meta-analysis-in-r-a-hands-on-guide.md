@@ -22,11 +22,28 @@ I want to use this space to:
 
 ## Planned notes
 
-- [Note 1: Overview and workflow](/reading-notes/dmar-note-01/)
-- [Note 2: Effect sizes and data preparation](/posts/2026/04/doing-meta-analysis-in-r-note-02/)
-- Note 3: Models and heterogeneity
-- Note 4: Publication bias and diagnostics
-
+- [Welcome!](/reading-notes/dmar-note-01/)
+- 入门
+- 1 引言
+- 2 探索 R
+- R 中的 Meta 分析
+- 3 效应量
+- 4 合并效应量
+- 5 研究间异质性
+- 6 森林图
+- 7 亚组分析
+- 8 Meta 回归
+- 9 发表偏倚
+- 高级方法
+- 10 “多层级”Meta 分析
+- 11 结构方程模型 Meta 分析
+- 12 网络 Meta 分析
+- 13 贝叶斯 Meta 分析
+- 实用工具
+- 14 功效分析
+- 15 偏倚风险图
+- 16 报告与可重复性
+- 17 效应量计算与转换
 ## How I will use these notes
 
 These notes will focus on:
