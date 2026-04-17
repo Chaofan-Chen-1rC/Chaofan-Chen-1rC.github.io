@@ -40,7 +40,7 @@ I want to use this space to:
 - 13 贝叶斯 Meta 分析
 - 实用工具
 - 14 功效分析
-- 15 偏倚风险图
+- [15 偏倚风险图]({{ '/assets/pdf/15-Risk-of-Bias-Plots.pdf' | relative_url }})
 - 16 报告与可重复性
 - 17 效应量计算与转换
 ## How I will use these notes
