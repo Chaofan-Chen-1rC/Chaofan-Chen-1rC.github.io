@@ -1,3 +1,14 @@
+---
+title: "Preface"
+date: 2026-04-17
+permalink: /reading-notes/dmar-note-02/
+tags:
+  - meta-analysis
+  - R
+  - reading notes
+  - doing-meta-analysis-in-r
+---
+
 # 前言
 
 > 来源页面：[*Preface | Doing Meta-Analysis in R: A Hands-on Guide*](https://doing-meta.guide/preface)  
