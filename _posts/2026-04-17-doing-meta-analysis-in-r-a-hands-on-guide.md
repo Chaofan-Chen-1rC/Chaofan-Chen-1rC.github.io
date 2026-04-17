@@ -23,7 +23,7 @@ I want to use this space to:
 ## Planned notes
 
 - [Welcome!](/reading-notes/dmar-note-01/)
-- 入门
+- [入门](/reading-notes/dmar-note-02/)
 - 1 引言
 - 2 探索 R
 - R 中的 Meta 分析
