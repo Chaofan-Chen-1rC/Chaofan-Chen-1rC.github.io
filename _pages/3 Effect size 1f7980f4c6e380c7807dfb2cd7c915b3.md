@@ -26,10 +26,10 @@ $$
 \theta
 $$
 
-更精确的来说，${\theta}_k$ 代表第 **`k`** 个研究的 **`true effect size`** ：
+更精确地说，$\theta_k$ 代表第 **`k`** 个研究的 **`true effect size`** ：
 
 $$
-{\theta_k}
+\theta_k
 $$
 
 但是，真实的效应量与我们在发表的研究结果中发现的观察到的效应量并不相同。`观察到的效应量`只是对真实效应量的估计。
@@ -42,7 +42,7 @@ $$
 \hat{\theta}_k
 $$
 
-But why does $\hat{\theta}_k$   differ from ${\theta}_k$? because of the **`Sampling error`**, which can be symbolized as：
+But why does $\hat{\theta}_k$ differ from $\theta_k$? because of the **`Sampling error`**, which can be symbolized as：
 
 $$
 \epsilon_k
@@ -51,12 +51,11 @@ $$
 Well, Put simply, $\hat{\theta}_k$  is, therefore, the same as：
 
 $$
-\hat{\theta}_k={\theta}_k+ {\epsilon}_k
+\hat{\theta}_k = \theta_k + \epsilon_k
 $$
 
-- 我们希望 **`observed effect size`** 越接近 **`true effect size`** 越好，而 **`observed effect size`** 就是 **`true effect size + epsilon k`**，所以epsilon k越小越好。
-- 在所有条件相同的情况下，我们可以假设，拥有**较小的抽样误差（$\epsilon_k$
-）**的研究将提供对真实效应量**更精确的估计**。
+- 我们希望 **`observed effect size`** 越接近 **`true effect size`** 越好，而 **`observed effect size`** 就是 $\hat{\theta}_k = \theta_k + \epsilon_k$，所以 $\epsilon_k$ 越小越好。
+- 在所有条件相同的情况下，我们可以假设，拥有**较小的抽样误差（$\epsilon_k$）**的研究将提供对真实效应量**更精确的估计**。
 
 所以！权重越大是因为：
 
@@ -69,7 +68,7 @@ $$
 
 <aside>
 
-Meta-analysis 考虑了 对 ${\theta}_k$ 估计的精确度，所以我们给**拥有更高精确度**（更小 $\epsilon_k$）的效应量的研究**更大的权重**，因为这些研究提供了对 ${\theta}_k$ 更精确的估计 ([L. Hedges and Olkin 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-hedges2014statistical)) 
+Meta-analysis 考虑了对 $\theta_k$ 估计的精确度，所以我们给**拥有更高精确度**（更小 $\epsilon_k$）的效应量的研究**更大的权重**，因为这些研究提供了对 $\theta_k$ 更精确的估计 ([L. Hedges and Olkin 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-hedges2014statistical)) 
 
 </aside>
 
@@ -94,7 +93,7 @@ $$
 SD = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
 $$
 
-根据计算公式，先求出未知项 **`*μ*`**，计算公式：
+根据计算公式，先求出未知项 $\mu$，计算公式：
 
 $$
 \mu = \frac{1}{N} \sum_{i=1}^{N} x_i
@@ -104,27 +103,27 @@ $$
 
 - 加起来： 2+4+6+8+10=30
 - 样本量： N = 5
-- 平均值（*μ*）为：
+- 平均值（$\mu$）为：
     
   $$
-  μ=\frac{30}{5}=6
+  \mu = \frac{30}{5} = 6
   $$
     
 
-**2. 每个数据点与平均值的差异：$（x_i−μ）$**
+**2. 每个数据点与平均值的差异：$(x_i - \mu)$**
 
-- 接下来，我们需要看每个数据点和平均值之间的差异。对于每个数据点  $x_i$，计算它与平均值的差：
-- 例如，对于数据点 2，它和平均值 6之间的差是：2−6=−4
+- 接下来，我们需要看每个数据点和平均值之间的差异。对于每个数据点 $x_i$，计算它与平均值的差：
+- 例如，对于数据点 2，它和平均值 6 之间的差是：$2 - 6 = -4$
 - 对其他数据点也做同样的计算，得到每个数据点和平均值的差异。
 
-**3. 差异的平方 $(xi−μ)^2$**
+**3. 差异的平方 $(x_i - \mu)^2$**
 
-- 将每个差异值平方。这样做是为了避免负值影响结果（因为如果不平方，负差异和正差异会抵消掉）例如：
-    - 对于 2−6=−42 - 6 = -42−6=−4，平方后得到 (−4)2=16(-4)^2 = 16(−4)2=16。
-    - 对于 4−6=−24 - 6 = -24−6=−2，平方后得到 (−2)2=4(-2)^2 = 4(−2)2=4。
-    - 对于 6−6=06 - 6 = 06−6=0，平方后得到 02=00^2 = 002=0。
-    - 对于 8−6=28 - 6 = 28−6=2，平方后得到 22=42^2 = 422=4。
-    - 对于 10−6=410 - 6 = 410−6=4，平方后得到 42=164^2 = 1642=16。
+- 将每个差异值平方。这样做是为了避免负值影响结果（因为如果不平方，负差异和正差异会抵消掉），例如：
+    - 对于 $2 - 6 = -4$，平方后得到 $(-4)^2 = 16$。
+    - 对于 $4 - 6 = -2$，平方后得到 $(-2)^2 = 4$。
+    - 对于 $6 - 6 = 0$，平方后得到 $0^2 = 0$。
+    - 对于 $8 - 6 = 2$，平方后得到 $2^2 = 4$。
+    - 对于 $10 - 6 = 4$，平方后得到 $4^2 = 16$。
 
 ### 4. **求平方差异的平均值**
 
@@ -179,7 +178,7 @@ mean(sample)
 [1] 10.06881
 ```
 
-我们可以看到， 非常的接近预定的均值（10）了，因为我们使用rnorm创建了一个 “perfect world”，均值10，标准差为2，当我们在8-12中抽取50个样本时，平均值也已经非常接近真实值了，根据中心极限定理，样本量足够大时，样本一定是呈现正态分布，所以我们把抽样数量增加至500，会得到更接近 **`μ`** 的$\bar{x}$。
+我们可以看到，非常接近预定的均值（10）了，因为我们使用 `rnorm` 创建了一个 “perfect world”，均值 10、标准差为 2，当我们在 8-12 中抽取 50 个样本时，平均值也已经非常接近真实值了。根据中心极限定理，样本量足够大时，样本一定是呈现正态分布，所以我们把抽样数量增加至 500，会得到更接近 $\mu$ 的 $\bar{x}$。
 
 - In formula, we can see that the standard error of the mean depends on the sample size of a study. When $n$ becomes larger, the standard error becomes smaller, meaning that a study’s estimate of the true population mean becomes more precise.
 
@@ -187,7 +186,7 @@ $$
 SE = \frac{s}{\sqrt{n}}
 $$
 
-- To exemplify this relationship, we conducted another simulation. Again, we used the $**rnorm**$ function, and assumed a true population mean of μ=10 and that $\sigma$ = 2. But this time, we varied the sample size, from ***n=2 to n=500***. For each simulation, we calculated both the mean, and the standard error using formula 3.2.
+- To exemplify this relationship, we conducted another simulation. Again, we used the `rnorm` function, and assumed a true population mean of $\mu = 10$ and that $\sigma = 2$. But this time, we varied the sample size from $n = 2$ to $n = 500$. For each simulation, we calculated both the mean and the standard error using formula 3.2.
 
 ![image.png](image-1.png)
 
@@ -223,10 +222,10 @@ $$
 MD_{\text{between}} = \bar{x}_1 - \bar{x}_2
 $$
 
-The $**SE_{\text{MD}_{\text{between}}}**$ 可以通过以下公式求得：
+The standard error $SE_{MD_{\text{between}}}$ 可以通过以下公式求得：
 
 $$
-SE_{\text{MD}_{\text{between}}} = s_{\text{pooled}} \sqrt{ \frac{1}{n_1} + \frac{1}{n_2} }
+SE_{MD_{\text{between}}} = s_{\text{pooled}} \sqrt{ \frac{1}{n_1} + \frac{1}{n_2} }
 $$
 
 ![image.png](image-2.png)
@@ -240,7 +239,7 @@ $$
 前后测差值的计算方法：
 
 $$
-\bar{D}=\bar{X}_{\text{post}}−\bar{X}_{\text{pre}}
+\bar{D} = \bar{X}_{\text{post}} - \bar{X}_{\text{pre}}
 $$
 
 这很简单对吗，然后是差值的SD：
@@ -317,17 +316,17 @@ se
 $S_{\text{pooled}}$ 获得：
 
 $$
-SMD_{\text{between}} = \frac{\bar{x}_\text{1} - \bar{x}_\text{2}} {S_{\text{pooled}}}
+SMD_{\text{between}} = \frac{\bar{x}_1 - \bar{x}_2}{S_{\text{pooled}}}
 $$
 
 **`SMD`**：This is a standard way to represent effect sizes in meta-analyses, making results more interpretable and comparable across studies. 即使研究间使用不同的结局指标单位，SMD也可以将研究的效应量标准化，使得研究间可比和结果可解释。
 
 - **计算SMCID很重要：**
     
-    for depression treatment, even effects as small as $SMD_{\text{between}}$ = 0.24 can have a clinically important impact on the lives of patients ([Pim Cuijpers et al. 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-cuijpers2014threshold)).
+    for depression treatment, even effects as small as $SMD_{\text{between}} = 0.24$ can have a clinically important impact on the lives of patients ([Pim Cuijpers et al. 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-cuijpers2014threshold)).
     
 
-$SMD_{\text{between}}＝ 1$ 表示两组均值相差一个样本标准差：
+$SMD_{\text{between}} = 1$ 表示两组均值相差一个样本标准差：
 
 ![image.png](image-3.png)
 
@@ -338,13 +337,13 @@ $SMD_{\text{between}}＝ 1$ 表示两组均值相差一个样本标准差：
 | **`SMD ≈ 0.50:`** | 🟡 **效应中等** |
 | **`SMD ≈ 0.80:`** | 🔴 **效应大** |
 
-The **`SE`** of $SMD_{\text{between}}$ can be calculated using this formula ([Borenstein et al. 2011](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-borenstein2011introduction))：
+The **`SE`** of $SMD_{\text{between}}$ can be calculated using this formula ([Borenstein et al. 2011](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-borenstein2011introduction))：
 
 $$
-SE_{\text{SMD}{\text{between}}} = \sqrt{ \frac{n_1 + n_2}{n_1 n_2} + \frac{\text{SMD}{\text{between}}^2}{2(n_1 + n_2)} }
+SE_{SMD_{\text{between}}} = \sqrt{ \frac{n_1 + n_2}{n_1 n_2} + \frac{SMD_{\text{between}}^2}{2(n_1 + n_2)} }
 $$
 
-所以到这里我们已经知道如何计算 $SMD_{\text{between}}$ 和 $SE_{\text{SMDbetween}}$ ，这样每个研究的标准化均值差和相应的标准误已知，当每个研究都计算出相应的 $yi$ 和 $vi$ 后，就可以进行效应量合并了。
+所以到这里我们已经知道如何计算 $SMD_{\text{between}}$ 和 $SE_{SMD_{\text{between}}}$，这样每个研究的标准化均值差和相应的标准误已知，当每个研究都计算出相应的 $yi$ 和 $vi$ 后，就可以进行效应量合并了。
 
 是时候在`R`中试一试：
 
@@ -386,7 +385,7 @@ Effect Size Calculation for Meta Analysis
 1. 效应量的计算公式是：
 
 $$
-SMD_{\text{between}} = \frac{\bar{x}_\text{1} - \bar{x}_\text{2}} {SD_{\text{pooled}}}
+SMD_{\text{between}} = \frac{\bar{x}_1 - \bar{x}_2}{SD_{\text{pooled}}}
 $$
 
 由于$S_{\text{pooled}}$是未知的，所以先计算，$S_{\text{pooled}}$ 的计算公式：
@@ -418,11 +417,11 @@ $$
 计算 **`SE`** :
 
 $$
-SE_{\text{SMD}{\text{between}}} = \sqrt{ \frac{n_1 + n_2}{n_1 n_2} + \frac{\text{SMD}{\text{between}}^2}{2(n_1 + n_2)} }
+SE_{SMD_{\text{between}}} = \sqrt{ \frac{n_1 + n_2}{n_1 n_2} + \frac{SMD_{\text{between}}^2}{2(n_1 + n_2)} }
 $$
 
 $$
-SE_{\text{SMDbetween}} = \sqrt{ \frac{200}{100 \cdot 100} + \frac{1^2}{2 \cdot 200} }
+SE_{SMD_{\text{between}}} = \sqrt{ \frac{200}{100 \cdot 100} + \frac{1^2}{2 \cdot 200} }
 = \sqrt{ \frac{200}{10000} + \frac{1}{400} }
 = \sqrt{0.02 + 0.0025}
 = \sqrt{0.0225} = 0.15
@@ -466,7 +465,7 @@ Effect Size Calculation for Meta Analysis
 
 </aside>
 
-计算 $SMD_{\text{between}}$ 和 $SE_{\text{SMDbetween}}$ 所需的数据准备和上述的 $MD_{between}$ 和 $SE_{\text{MDbetween}}$一致：
+计算 $SMD_{\text{between}}$ 和 $SE_{SMD_{\text{between}}}$ 所需的数据准备和上述的 $MD_{\text{between}}$ 和 $SE_{MD_{\text{between}}}$ 一致：
 
 - **`n.e`**. The number of observations in the intervention/experimental group.
 - **`mean.e`**. The mean of the intervention/experimental group.
@@ -478,7 +477,7 @@ Effect Size Calculation for Meta Analysis
 # **Effect Size Correction**
 
 $$
-\hat{\theta}_k = {\theta}_k + {\epsilon_k}
+\hat{\theta}_k = \theta_k + \epsilon_k
 
 $$
 
@@ -489,10 +488,10 @@ $$
     2. and **how we can implement them in *R***.
 
 **3.4.1 Small Sample Bias**
-观测到小样本更可能观测到大效应量（特别是𝑛 ≤ 20 ），这种小样本偏差意味着当研究的总样本量很小时，smd系统地高估了真实效应量的大小。所以需要对小样本偏倚进行校正，也就是将**`SMD/Cohen’s d`** 校正为 **`Hedge's g`** ，校正计算公式如下：
+观测到小样本更可能观测到大效应量（特别是 $n \le 20$），这种小样本偏差意味着当研究的总样本量很小时，SMD 系统地高估了真实效应量的大小。所以需要对小样本偏倚进行校正，也就是将 **`SMD/Cohen’s d`** 校正为 **`Hedge's g`**，校正计算公式如下：
 
 $$
-Hedges’ g = \text{SMD} \times \left( 1 - \frac{3}{4N - 9} \right)
+g = \text{SMD} \times \left( 1 - \frac{3}{4N - 9} \right)
 $$
 
 注意这里的$n$是total sample size
