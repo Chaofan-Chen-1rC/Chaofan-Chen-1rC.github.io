@@ -1,4 +1,13 @@
-# 3 Effect size
+---
+title: "Effect Size"
+date: 2026-04-17
+permalink: /reading-notes/dmar-note-05/
+tags:
+  - meta-analysis
+  - R
+  - reading notes
+  - doing-meta-analysis-in-r
+---
 
 <aside>
 
