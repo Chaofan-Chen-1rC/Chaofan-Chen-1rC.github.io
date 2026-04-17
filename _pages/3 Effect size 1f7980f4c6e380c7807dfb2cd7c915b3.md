@@ -456,13 +456,9 @@ Effect Size Calculation for Meta Analysis
 ##     [...]
 ```
 
-<aside>
-
 **如何解释结果？**
 
 注意所选的效应量是Lower is better 还是Higher is better，如果不统一会导致严重的错误出现。
-
-</aside>
 
 计算 $$SMD_{\text{between}}$$ 和 $$SE_{SMD_{\text{between}}}$$ 所需的数据准备和上述的 $$MD_{\text{between}}$$ 和 $$SE_{MD_{\text{between}}}$$ 一致：
 
