@@ -52,7 +52,7 @@ This is the first note in my reading series on *Doing Meta-Analysis in R: A Hand
 
 ## 欢迎！
 
-欢迎来到 **《使用 R 进行 Meta 分析：实操指南》**（*Doing Meta-Analysis with R: A Hands-On Guide*）的在线版本。
+
 
 本书旨在以一种易于上手的方式介绍如何在 *R* 中开展 Meta 分析。书中涵盖了 Meta 分析的关键步骤，包括结局指标的合并、森林图、异质性诊断、亚组分析、Meta 回归、控制发表偏倚的方法，以及偏倚风险评估和绘图工具。
 
