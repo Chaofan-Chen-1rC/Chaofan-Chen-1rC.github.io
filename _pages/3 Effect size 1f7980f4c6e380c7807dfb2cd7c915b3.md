@@ -9,8 +9,7 @@ tags:
   - doing-meta-analysis-in-r
 ---
 
-In meta-analyses, studies instead of individuals become the fundamental units of our analysis.
-独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
+In meta-analyses, studies instead of individuals become the fundamental units of our analysis.独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
 
 # 1. Effect size
 
@@ -23,15 +22,15 @@ In meta-analyses, studies instead of individuals become the fundamental units of
 
 **`true effect size`** ：
 
-```math
+$$
 \theta
-```
+$$
 
 更精确地说，$\theta_k$ 代表第 **`k`** 个研究的 **`true effect size`** ：
 
-```math
+$$
 \theta_k
-```
+$$
 
 但是，真实的效应量与我们在发表的研究结果中发现的观察到的效应量并不相同。`观察到的效应量`只是对真实效应量的估计。
 
@@ -39,21 +38,21 @@ In meta-analyses, studies instead of individuals become the fundamental units of
 
 **our estimate of the true effect size, can therefore be written as：**
 
-```math
+$$
 \hat{\theta}_k
-```
+$$
 
 But why does $\hat{\theta}_k$ differ from $\theta_k$? because of the **`Sampling error`**, which can be symbolized as：
 
-```math
+$$
 \epsilon_k
-```
+$$
 
 Well, Put simply, $\hat{\theta}_k$  is, therefore, the same as：
 
-```math
+$$
 \hat{\theta}_k = \theta_k + \epsilon_k
-```
+$$
 
 - 我们希望 **`observed effect size`** 越接近 **`true effect size`** 越好，而 **`observed effect size`** 就是 $\hat{\theta}_k = \theta_k + \epsilon_k$，所以 $\epsilon_k$ 越小越好。
 - 在所有条件相同的情况下，我们可以假设，拥有**较小的抽样误差（$\epsilon_k$）**的研究将提供对真实效应量**更精确的估计**。
@@ -67,16 +66,18 @@ Well, Put simply, $\hat{\theta}_k$  is, therefore, the same as：
 
 ![image.png](image.png)
 
+<aside>
 
-> Meta-analysis 考虑了对 $\theta_k$ 估计的精确度，所以我们给**拥有更高精确度**（更小 $\epsilon_k$）的效应量的研究**更大的权重**，因为这些研究提供了对 $\theta_k$ 更精确的估计 ([L. Hedges and Olkin 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-hedges2014statistical))
+Meta-analysis 考虑了对 $\theta_k$ 估计的精确度，所以我们给**拥有更高精确度**（更小 $\epsilon_k$）的效应量的研究**更大的权重**，因为这些研究提供了对 $\theta_k$ 更精确的估计 ([L. Hedges and Olkin 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-hedges2014statistical)) 
 
+</aside>
 
 - 因为我们不可能知道整个群体的 **`True effect size`**（总会有测量误差的存在，导致我们的观测效应量只能是一个分布，**`SE`** 越小的研究说明其对于真实值的估计越精确），所以 SE 也不知道，然而，我们可以用统计理论来近似抽样误差。使用 **`stantadard error`** ，计算公式如下：
-
-```math
+    
+$$
 SE = \frac{SD}{\sqrt{n}}
-```
-
+$$
+    
 - **标准误**定义为**抽样分布的标准差**。**所以标准误的平方就抽样分布的方差**
 
 所以我们提取下述指标即可计算SE：
@@ -88,25 +89,26 @@ SE = \frac{SD}{\sqrt{n}}
 
 1. **计算公式：**
 
-```math
+$$
 SD = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
-```
+$$
 
 根据计算公式，先求出未知项 $\mu$，计算公式：
 
-```math
+$$
 \mu = \frac{1}{N} \sum_{i=1}^{N} x_i
-```
+$$
 
 假设我们有这些数据： 2，4，6，8，10
 
 - 加起来： 2+4+6+8+10=30
 - 样本量： N = 5
 - 平均值（$\mu$）为：
-
-```math
+    
+  $$
   \mu = \frac{30}{5} = 6
-```
+  $$
+    
 
 **2. 每个数据点与平均值的差异：$(x_i - \mu)$**
 
@@ -136,9 +138,9 @@ SD = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
 
 - 最后一步是取这个方差的平方根，得到标准差：
 
-```math
+$$
 SD = \sqrt{8} \approx 2.83
-```
+$$
 
 ### 总结：
 
@@ -160,9 +162,9 @@ SD = \sqrt{8} \approx 2.83
 2. 样本数量（n） 是：n=5
 3. 计算标准误（SE）：
 
-```math
+$$
 SE = \frac{2.83}{\sqrt{5}} = 1.266
-```
+$$
 
 现在，我们在R中使用 **`rnorm`** 函数，在一个已知分布的群体中（normality distribution）随机抽取既定均值，标准差和N出来：
 
@@ -180,9 +182,9 @@ mean(sample)
 
 - In formula, we can see that the standard error of the mean depends on the sample size of a study. When $n$ becomes larger, the standard error becomes smaller, meaning that a study’s estimate of the true population mean becomes more precise.
 
-```math
+$$
 SE = \frac{s}{\sqrt{n}}
-```
+$$
 
 - To exemplify this relationship, we conducted another simulation. Again, we used the `rnorm` function, and assumed a true population mean of $\mu = 10$ and that $\sigma = 2$. But this time, we varied the sample size from $n = 2$ to $n = 500$. For each simulation, we calculated both the mean and the standard error using formula 3.2.
 
@@ -195,16 +197,19 @@ SE = \frac{s}{\sqrt{n}}
 
 所以我们给样本量更大的研究更大的权重，因为观测效应量更趋向于真实效应量。
 
+<aside>
 
-> - 观察到的效应量和真实的效应量之间的差异是由于抽样误差导致的。
-> - 加权分析，对于样本量更大和标准误更小的研究赋予更大的权重。
-
+- 观察到的效应量和真实的效应量之间的差异是由于抽样误差导致的。
+- 加权分析，对于样本量更大和标准误更小的研究赋予更大的权重。
+</aside>
 
 # **2. Between-Group Mean Difference**
 
+<aside>
 
-> 在实验（干预）类研究中，通常设置两组（或以上）进行比较，我们想知道组间的差异量，可以使用**Mean Difference**
+在实验（干预）类研究中，通常设置两组（或以上）进行比较，我们想知道组间的差异量，可以使用**Mean Difference**
 
+</aside>
 
 **The between-group mean difference $MD_{\text{between}}$  is defined as：**
 
@@ -213,37 +218,38 @@ SE = \frac{s}{\sqrt{n}}
 
 **均值差定义为第1组的均值减去第2组的均值：**
 
-```math
+$$
 MD_{\text{between}} = \bar{x}_1 - \bar{x}_2
-```
+$$
 
 The standard error $SE_{MD_{\text{between}}}$ 可以通过以下公式求得：
 
-```math
+$$
 SE_{MD_{\text{between}}} = s_{\text{pooled}} \sqrt{ \frac{1}{n_1} + \frac{1}{n_2} }
-```
+$$
 
 ![image.png](image-2.png)
 
-```math
+$$
 s_{\text{pooled}} = \sqrt{ \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{(n_1 - 1) + (n_2 - 1)} }
-```
+$$
 
 - 但一般来说，为消除基线的差异带来的结果不可比性，取前后测的差值进行组间比较：
 
 前后测差值的计算方法：
 
-```math
+$$
 \bar{D} = \bar{X}_{\text{post}} - \bar{X}_{\text{pre}}
-```
+$$
 
 这很简单对吗，然后是差值的SD：
 
 差值标准差不能简单地用两个 SD 相减，需要考虑它们之间的**相关性（correlation）**，计算公式为：
 
-```math
+$$
 SD_{\bar{D}} = \sqrt{SD_{\text{pre}}^2 + SD_{\text{post}}^2 - 2 \times r \times SD_{\text{pre}} \times SD_{\text{post}}}
-```
+
+$$
 
 - 默认 r=0.5
 - 或使用多个 rrr（如 0.3, 0.5, 0.7）做稳健性分析
@@ -309,9 +315,9 @@ se
 
 $S_{\text{pooled}}$ 获得：
 
-```math
+$$
 SMD_{\text{between}} = \frac{\bar{x}_1 - \bar{x}_2}{S_{\text{pooled}}}
-```
+$$
 
 **`SMD`**：This is a standard way to represent effect sizes in meta-analyses, making results more interpretable and comparable across studies. 即使研究间使用不同的结局指标单位，SMD也可以将研究的效应量标准化，使得研究间可比和结果可解释。
 
@@ -333,9 +339,9 @@ $SMD_{\text{between}} = 1$ 表示两组均值相差一个样本标准差：
 
 The **`SE`** of $SMD_{\text{between}}$ can be calculated using this formula ([Borenstein et al. 2011](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-borenstein2011introduction))：
 
-```math
+$$
 SE_{SMD_{\text{between}}} = \sqrt{ \frac{n_1 + n_2}{n_1 n_2} + \frac{SMD_{\text{between}}^2}{2(n_1 + n_2)} }
-```
+$$
 
 所以到这里我们已经知道如何计算 $SMD_{\text{between}}$ 和 $SE_{SMD_{\text{between}}}$，这样每个研究的标准化均值差和相应的标准误已知，当每个研究都计算出相应的 $yi$ 和 $vi$ 后，就可以进行效应量合并了。
 
@@ -378,57 +384,58 @@ Effect Size Calculation for Meta Analysis
 | 组2 | 100 | 60 | 10 |
 1. 效应量的计算公式是：
 
-```math
+$$
 SMD_{\text{between}} = \frac{\bar{x}_1 - \bar{x}_2}{SD_{\text{pooled}}}
-```
+$$
 
 由于$S_{\text{pooled}}$是未知的，所以先计算，$S_{\text{pooled}}$ 的计算公式：
 
-```math
+$$
 s_{\text{pooled}} = \sqrt{ \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{(n_1 - 1) + (n_2 - 1)} }
-```
+$$
 
 带入真实数据：
 
-```math
+$$
 s_{\text{pooled}} = \sqrt{ \frac{(100 - 1)10^2 + (100 - 1)10^2}{(100 - 1) + (100 - 1)} }
-```
+$$
 
 $$
 s_{\text{pooled}} = \sqrt{ \frac{(100 - 1) \cdot 10^2 + (100 - 1) \cdot 10^2}{99 + 99} }
 = \sqrt{ \frac{99 \cdot 100 + 99 \cdot 100}{198} }
 = \sqrt{ \frac{19800}{198} }
 = \sqrt{100} = 10
+$$
 
-```math
 已知$S_{\text{pooled}}$ 后，计算$SMD_{\text{between}}$ ：
-```
 
+$$
 SMD_{\text{between}} = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}} = \frac{50 - 60}{10} = -1.0
 
-```math
+$$
+
 计算 **`SE`** :
-```
 
+$$
 SE_{SMD_{\text{between}}} = \sqrt{ \frac{n_1 + n_2}{n_1 n_2} + \frac{SMD_{\text{between}}^2}{2(n_1 + n_2)} }
+$$
 
-```math
 $$
 SE_{SMD_{\text{between}}} = \sqrt{ \frac{200}{100 \cdot 100} + \frac{1^2}{2 \cdot 200} }
 = \sqrt{ \frac{200}{10000} + \frac{1}{400} }
 = \sqrt{0.02 + 0.0025}
 = \sqrt{0.0225} = 0.15
-```
+$$
 
 构建 **`95%CI`**：
 
-```math
+$$
 \begin{aligned}
 \text{95\% CI} &= \hat{\theta} \pm 1.96 \cdot SE_{\text{SMD}_{\text{between}}} \\
               &= -1.0 \pm 1.96 \cdot 0.15 \\
               &= (-1.294,\ -0.706)
 \end{aligned}
-```
+$$
 
 所以我们得到了：
 
@@ -450,11 +457,13 @@ Effect Size Calculation for Meta Analysis
 ##     [...]
 ```
 
+<aside>
 
-> **如何解释结果？**
->
-> 注意所选的效应量是Lower is better 还是Higher is better，如果不统一会导致严重的错误出现。
+**如何解释结果？**
 
+注意所选的效应量是Lower is better 还是Higher is better，如果不统一会导致严重的错误出现。
+
+</aside>
 
 计算 $SMD_{\text{between}}$ 和 $SE_{SMD_{\text{between}}}$ 所需的数据准备和上述的 $MD_{\text{between}}$ 和 $SE_{MD_{\text{between}}}$ 一致：
 
@@ -467,9 +476,10 @@ Effect Size Calculation for Meta Analysis
 
 # **Effect Size Correction**
 
-```math
+$$
 \hat{\theta}_k = \theta_k + \epsilon_k
-```
+
+$$
 
 前面我们提到了：估计效应量和真实效应量的差异仅来源于**`sampling error`**，根据公式可得抽样误差越小，观测效应量越收敛于真实效应量。
 
@@ -480,9 +490,9 @@ Effect Size Calculation for Meta Analysis
 **3.4.1 Small Sample Bias**
 观测到小样本更可能观测到大效应量（特别是 $n \le 20$），这种小样本偏差意味着当研究的总样本量很小时，SMD 系统地高估了真实效应量的大小。所以需要对小样本偏倚进行校正，也就是将 **`SMD/Cohen’s d`** 校正为 **`Hedge's g`**，校正计算公式如下：
 
-```math
+$$
 g = \text{SMD} \times \left( 1 - \frac{3}{4N - 9} \right)
-```
+$$
 
 注意这里的$n$是total sample size
 
