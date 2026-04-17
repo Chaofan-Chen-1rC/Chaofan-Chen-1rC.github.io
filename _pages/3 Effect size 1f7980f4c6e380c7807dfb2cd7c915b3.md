@@ -190,7 +190,7 @@ $$
 
 - To exemplify this relationship, we conducted another simulation. Again, we used the **`$rnorm$`** function, and assumed a true population mean of μ=10 and that $\sigma$ = 2. But this time, we varied the sample size, from ***n=2 to n=500***. For each simulation, we calculated both the mean, and the standard error using formula 3.2.
 
-![image.png](image-1.png)
+![image.png](image%201.png)
 
 我们可以看到，随着样本量的增加：
 
@@ -230,7 +230,7 @@ $$
 SE_{\text{MD}_{\text{between}}} = s_{\text{pooled}} \sqrt{ \frac{1}{n_1} + \frac{1}{n_2} }
 $$
 
-![image.png](image-2.png)
+![image.png](image%202.png)
 
 $$
 s_{\text{pooled}} = \sqrt{ \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{(n_1 - 1) + (n_2 - 1)} }
@@ -330,7 +330,7 @@ $$
 
 $SMD_{\text{between}}＝ 1$ 表示两组均值相差一个样本标准差：
 
-![image.png](image-3.png)
+![image.png](image%203.png)
 
 标准化使评估平均差的大小变得容易得多。标准化平均差异通常使用Cohen（1988）的惯例来解释：
 
