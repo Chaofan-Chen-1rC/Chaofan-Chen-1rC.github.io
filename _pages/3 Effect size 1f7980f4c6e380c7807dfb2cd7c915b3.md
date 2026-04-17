@@ -9,7 +9,8 @@ tags:
   - doing-meta-analysis-in-r
 ---
 
-In meta-analyses, studies instead of individuals become the fundamental units of our analysis.独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
+In meta-analyses, studies instead of individuals become the fundamental units of our analysis.
+独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
 
 # 1. Effect size
 
@@ -26,7 +27,7 @@ $$
 \theta
 $$
 
-更精确地说，$\theta_k$ 代表第 **`k`** 个研究的 **`true effect size`** ：
+更精确地说，$$\theta_k$$ 代表第 **`k`** 个研究的 **`true effect size`** ：
 
 $$
 \theta_k
