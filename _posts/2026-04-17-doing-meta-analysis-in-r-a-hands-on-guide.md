@@ -38,7 +38,7 @@ I want to use this space to:
 
 ### 高级方法
 
-- 10 “多层级”Meta 分析
+- [10 “多层级”Meta 分析](/reading-notes/dmar-note-10/)
 - 11 结构方程模型 Meta 分析
 - [12 网络 Meta 分析](/reading-notes/dmar-note-12/)
 - 13 贝叶斯 Meta 分析
