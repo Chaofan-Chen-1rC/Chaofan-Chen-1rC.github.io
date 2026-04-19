@@ -13,6 +13,8 @@ tags:
   - doing-meta-analysis-in-r
 ---
 
+{% include toc %}
+
 - 需要自己指定先验分布（prior distributions）  
 - 均值分布
 - tau2分布
