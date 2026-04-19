@@ -1,3 +1,12 @@
+---
+title: "Bayesian Meta-analysis Notes"
+permalink: /notes/bayesian-meta-analysis/
+layout: single
+author_profile: false
+toc: true
+toc_sticky: true
+classes: wide
+---
 
 - 需要自己指定先验分布（prior distributions）  
 - 均值分布
