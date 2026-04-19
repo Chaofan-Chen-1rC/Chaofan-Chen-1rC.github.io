@@ -1,11 +1,16 @@
 ---
-title: "Bayesian Meta-analysis Notes"
+title: "Bayesian Meta-analysis"
+date: 2026-04-19
 permalink: /notes/bayesian-meta-analysis/
 layout: single
-author_profile: false
 toc: true
 toc_sticky: true
 classes: wide
+tags:
+  - meta-analysis
+  - R
+  - reading notes
+  - doing-meta-analysis-in-r
 ---
 
 - 需要自己指定先验分布（prior distributions）  
