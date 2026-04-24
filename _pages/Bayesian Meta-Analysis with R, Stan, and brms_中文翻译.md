@@ -1,3 +1,14 @@
+---
+title: "Bayesian meta analysis in Brms 2"
+date: 2026-04-24
+permalink: /pages/2026/04/Bayesian-meta-analysis-in-Brms 2/
+tags:
+  - meta-analysis
+  - R
+  - reading notes
+  - book notes
+---
+
 # Bayesian Meta-Analysis with R, Stan, and brms
 
 *Meta 分析是贝叶斯多层模型的一个特例*
