@@ -1,7 +1,7 @@
 ---
 title: "Bayesian meta analysis in Brms 2"
 date: 2026-04-24
-permalink: /pages/2026/04/Bayesian-meta-analysis-in-Brms 2/
+permalink: /pages/2026/04/Bayesian-meta-analysis-in-Brms-2/
 tags:
   - meta-analysis
   - R
