@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "引言"
 date: 2026-04-17
 permalink: /reading-notes/dmar-note-03/
 tags:
