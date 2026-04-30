@@ -1,5 +1,5 @@
 ---
-title: "Network Meta-analysis1"
+title: "Network Meta-analysis"
 date: 2026-04-17
 permalink: /reading-notes/dmar-note-12/
 tags:
@@ -9,8 +9,79 @@ tags:
   - doing-meta-analysis-in-r
 ---
 
+<aside class="sidebar__right">
+  <nav class="toc">
+    <header>
+      <h4 class="nav__title"><i class="fa fa-file-text"></i> 本页内容</h4>
+    </header>
+    <ul class="toc__menu" id="markdown-toc">
+      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+      <li><a href="#121what-are-network-meta-analyses" id="markdown-toc-121what-are-network-meta-analyses">12.1 What Are Network Meta-Analyses?</a>
+        <ul>
+          <li><a href="#1211直接证据与间接证据" id="markdown-toc-1211直接证据与间接证据">12.1.1 直接证据与间接证据</a></li>
+          <li><a href="#1212可传递性--一致性" id="markdown-toc-1212可传递性--一致性">12.1.2 可传递性 &amp; 一致性</a></li>
+          <li><a href="#1213network-meta-analysis-模型" id="markdown-toc-1213network-meta-analysis-模型">12.1.3 Network Meta-Analysis 模型</a></li>
+        </ul>
+      </li>
+      <li><a href="#122frequentist-network-meta-analysis" id="markdown-toc-122frequentist-network-meta-analysis">12.2 Frequentist Network Meta-Analysis</a>
+        <ul>
+          <li><a href="#1221图论模型" id="markdown-toc-1221图论模型">12.2.1 图论模型</a>
+            <ul>
+              <li><a href="#例子" id="markdown-toc-例子">例子</a></li>
+            </ul>
+          </li>
+          <li><a href="#1222frequentist-network-meta-analysis-inr" id="markdown-toc-1222frequentist-network-meta-analysis-inr">12.2.2 Frequentist Network Meta-Analysis in R</a>
+            <ul>
+              <li><a href="#12221数据准备" id="markdown-toc-12221数据准备">12.2.2.1 数据准备</a></li>
+              <li><a href="#12222模型拟合" id="markdown-toc-12222模型拟合">12.2.2.2 模型拟合</a></li>
+              <li><a href="#12223网络模型的进一步检验" id="markdown-toc-12223网络模型的进一步检验">12.2.2.3 网络模型的进一步检验</a>
+                <ul>
+                  <li><a href="#122231网络证据图" id="markdown-toc-122231网络证据图">12.2.2.3.1 网络证据图</a></li>
+                  <li><a href="#122232可视化直接和间接证据" id="markdown-toc-122232可视化直接和间接证据">12.2.2.3.2 可视化直接和间接证据</a></li>
+                  <li><a href="#122233效果估计表格" id="markdown-toc-122233效果估计表格">12.2.2.3.3 效果估计表格</a></li>
+                  <li><a href="#122234治疗排名" id="markdown-toc-122234治疗排名">12.2.2.3.4 治疗排名</a></li>
+                </ul>
+              </li>
+              <li><a href="#12224评估结果的有效性" id="markdown-toc-12224评估结果的有效性">12.2.2.4 评估结果的有效性</a>
+                <ul>
+                  <li><a href="#122241网状热图" id="markdown-toc-122241网状热图">12.2.2.4.1 网状热图</a></li>
+                  <li><a href="#122242网络切分法" id="markdown-toc-122242网络切分法">12.2.2.4.2 网络切分法</a></li>
+                  <li><a href="#122243比较调整漏斗图" id="markdown-toc-122243比较调整漏斗图">12.2.2.4.3 比较调整漏斗图</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#123bayesian-network-meta-analysis" id="markdown-toc-123bayesian-network-meta-analysis">12.3 Bayesian Network Meta-Analysis</a>
+        <ul>
+          <li><a href="#1231bayesian-inference" id="markdown-toc-1231bayesian-inference">12.3.1 Bayesian Inference</a></li>
+          <li><a href="#1232the-bayesian-network-meta-analysis-model" id="markdown-toc-1232the-bayesian-network-meta-analysis-model">12.3.2 The Bayesian Network Meta-Analysis Model</a>
+            <ul>
+              <li><a href="#12321pairwise-meta-analysis" id="markdown-toc-12321pairwise-meta-analysis">12.3.2.1 Pairwise Meta-Analysis</a></li>
+              <li><a href="#12322extension-to-network-meta-analysis" id="markdown-toc-12322extension-to-network-meta-analysis">12.3.2.2 Extension to Network Meta-Analysis</a></li>
+            </ul>
+          </li>
+          <li><a href="#1233bayesian-network-meta-analysis-inr" id="markdown-toc-1233bayesian-network-meta-analysis-inr">12.3.3 Bayesian Network Meta-Analysis in R</a>
+            <ul>
+              <li><a href="#12331data-preparation" id="markdown-toc-12331data-preparation">12.3.3.1 Data Preparation</a></li>
+              <li><a href="#12332network-graph" id="markdown-toc-12332network-graph">12.3.3.2 Network Graph</a></li>
+              <li><a href="#12333模型编译" id="markdown-toc-12333模型编译">12.3.3.3 模型编译</a></li>
+              <li><a href="#12334markov-chain-monte-carlo-sampling" id="markdown-toc-12334markov-chain-monte-carlo-sampling">12.3.3.4 Markov Chain Monte Carlo Sampling</a></li>
+              <li><a href="#12335assessing-model-convergence" id="markdown-toc-12335assessing-model-convergence">12.3.3.5 Assessing Model Convergence</a></li>
+              <li><a href="#12336assessing-inconsistency-the-nodesplit-method" id="markdown-toc-12336assessing-inconsistency-the-nodesplit-method">12.3.3.6 Assessing Inconsistency: The Nodesplit Method</a></li>
+              <li><a href="#12337generating-the-network-meta-analysis-results" id="markdown-toc-12337generating-the-network-meta-analysis-results">12.3.3.7 Generating the Network Meta-Analysis Results</a></li>
+            </ul>
+          </li>
+          <li><a href="#1234network-meta-regression" id="markdown-toc-1234network-meta-regression">12.3.4 Network Meta-Regression</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
 
-#meta 111
+
+#meta 
 - Doing meta analysis with R 
 - netmeta文章
 - 贝叶斯方法
@@ -326,7 +397,7 @@ as.matrix(table(TherapyFormats$author))
 -  treat2：数据集中包含**第二个干预名称的列**的名称。
 
 - studlab：从中提取比较的研究标签。尽管此参数是可选的，但建议始终指定，这是**检测网络中是否存在多臂试验的唯一方法**。
----
+
 - data：数据集的名称。
 
 - sm：用于指定我们所使用的效应量类型，包括："RD"（风险差）、"RR"（风险比）、"OR"（比值比）、"HR"（风险比）、"MD"（均值差）、"SMD"（标准化均值差）等。
@@ -518,6 +589,7 @@ plot(d.evidence)
 ![[Pasted image 20251114143932.png]]
 
 如我们所见，在我们的网络模型中存在若干需要仅依靠间接证据来推断的估计值。该图表还为我们提供了两个额外的指标：每个估计比较的最小并行度和平均路径长度。根据 König, Krahn, and Binder ([2013](https://doing-meta.guide/references#ref-konig2013visualizing)) 的研究，**mean path length > 2 表明对这种比较估计应特别谨慎地解读(由于走过的路径长，证据多数由间接比较的证据支持）**。
+
 ##### 12.2.2.3.3 效果估计表格[](https://doing-meta.guide/netwma#effect-estimate-table)
 接下来，我们可以查看我们网络中针对所有可能的治疗比较的估计值。
 
