@@ -1,5 +1,5 @@
 ---
-title: "Doing Meta-Analysis in R | Note 1: Welcome!"
+title: "Welcome!"
 date: 2026-04-17
 permalink: /reading-notes/dmar-note-01/
 classes: wide
@@ -9,12 +9,6 @@ tags:
   - reading notes
   - doing-meta-analysis-in-r
 ---
-
-# 欢迎！
-
-来源页面：[https://doing-meta.guide/](https://doing-meta.guide/)
-
-以下内容为页面可见内容的中文译文，并尽量保留了原页面的结构与链接。
 
 <aside class="sidebar__right">
   <nav class="toc">
