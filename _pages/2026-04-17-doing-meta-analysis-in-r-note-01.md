@@ -1,3 +1,15 @@
+---
+title: "Doing Meta-Analysis in R | Note 1: Welcome!"
+date: 2026-04-17
+permalink: /reading-notes/dmar-note-01/
+classes: wide
+tags:
+  - meta-analysis
+  - R
+  - reading notes
+  - doing-meta-analysis-in-r
+---
+
 # 欢迎！
 
 来源页面：[https://doing-meta.guide/](https://doing-meta.guide/)
