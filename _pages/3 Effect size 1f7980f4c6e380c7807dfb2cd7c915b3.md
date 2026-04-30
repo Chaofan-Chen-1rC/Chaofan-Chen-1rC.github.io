@@ -9,8 +9,51 @@ tags:
   - doing-meta-analysis-in-r
 ---
 
+<aside class="sidebar__right">
+  <nav class="toc">
+    <header>
+      <h4 class="nav__title"><i class="fa fa-file-text"></i> 本页内容</h4>
+    </header>
+    <ul class="toc__menu" id="markdown-toc">
+      <li><a href="#1-效应量基础" id="markdown-toc-1-效应量基础">1 效应量基础</a>
+        <ul>
+          <li><a href="#11-真实效应量与观测效应量" id="markdown-toc-11-真实效应量与观测效应量">1.1 真实效应量与观测效应量</a></li>
+          <li><a href="#12-抽样误差与权重" id="markdown-toc-12-抽样误差与权重">1.2 抽样误差与权重</a></li>
+          <li><a href="#13-标准误se的计算" id="markdown-toc-13-标准误se的计算">1.3 标准误（SE）的计算</a></li>
+          <li><a href="#14-标准差sd的计算步骤" id="markdown-toc-14-标准差sd的计算步骤">1.4 标准差（SD）的计算步骤</a></li>
+          <li><a href="#15-样本量与标准误的关系" id="markdown-toc-15-样本量与标准误的关系">1.5 样本量与标准误的关系</a></li>
+        </ul>
+      </li>
+      <li><a href="#2-组间均值差-md" id="markdown-toc-2-组间均值差-md">2 组间均值差（MD）</a>
+        <ul>
+          <li><a href="#21-md的定义" id="markdown-toc-21-md的定义">2.1 MD 的定义</a></li>
+          <li><a href="#22-前后测差值与差值标准差" id="markdown-toc-22-前后测差值与差值标准差">2.2 前后测差值与差值标准差</a></li>
+          <li><a href="#23-md所需数据" id="markdown-toc-23-md所需数据">2.3 MD 所需数据</a></li>
+        </ul>
+      </li>
+      <li><a href="#3-组间标准化均值差-smd" id="markdown-toc-3-组间标准化均值差-smd">3 组间标准化均值差（SMD）</a>
+        <ul>
+          <li><a href="#31-smd的定义与解释" id="markdown-toc-31-smd的定义与解释">3.1 SMD 的定义与解释</a></li>
+          <li><a href="#32-smd的标准误" id="markdown-toc-32-smd的标准误">3.2 SMD 的标准误</a></li>
+          <li><a href="#33-smd手算与r结果" id="markdown-toc-33-smd手算与r结果">3.3 SMD 手算与 R 结果</a></li>
+          <li><a href="#34-smd所需数据" id="markdown-toc-34-smd所需数据">3.4 SMD 所需数据</a></li>
+        </ul>
+      </li>
+      <li><a href="#4-效应量校正" id="markdown-toc-4-效应量校正">4 效应量校正</a>
+        <ul>
+          <li><a href="#41-小样本偏差与hedges-g" id="markdown-toc-41-小样本偏差与hedges-g">4.1 小样本偏差与 Hedges' g</a></li>
+        </ul>
+      </li>
+      <li><a href="#5-分析单位问题" id="markdown-toc-5-分析单位问题">5 分析单位问题</a></li>
+      <li><a href="#6-小结" id="markdown-toc-6-小结">6 小结</a></li>
+    </ul>
+  </nav>
+</aside>
+
 In meta-analyses, studies instead of individuals become the fundamental units of our analysis.
 独立的原始研究而不是受试者成为分析的基本单位，即合并定量研究的数据。
+
+<a id="1-效应量基础"></a>
 
 # 1. Effect size. 
 
@@ -20,6 +63,8 @@ In meta-analyses, studies instead of individuals become the fundamental units of
 - 可计算型：提供n，mean，sd
 - 可靠性：同可计算性（计算standard error）
 - 可解释性：选择合适的效应量，并解释
+
+<a id="11-真实效应量与观测效应量"></a>
 
 **`true effect size`** ：
 
@@ -58,6 +103,8 @@ $$
 - 我们希望 **`observed effect size`** 越接近 **`true effect size`** 越好，而 **`observed effect size`** 就是 $$\hat{\theta}_k = \theta_k + \epsilon_k$$，所以 $$\epsilon_k$$ 越小越好。
 - 在所有条件相同的情况下，我们可以假设，拥有**较小的抽样误差（$$\epsilon_k$$）**的研究将提供对真实效应量**更精确的估计**。
 
+<a id="12-抽样误差与权重"></a>
+
 所以！权重越大是因为：
 
 1. 抽样误差（标准误）越小
@@ -69,9 +116,11 @@ $$
 
 <aside>
 
-Meta-analysis 考虑了对 $$\theta_k$$ 估计的精确度，所以我们给拥有更高精确度，即更小 $$\epsilon_k$$ 的效应量的研究更大的权重，因为这些研究提供了对 $$\theta_k$$ 更精确的估计 [L. Hedges and Olkin 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-hedges2014statistical) 
+Meta-analysis 考虑了对 $$\theta_k$$ 估计的精确度，所以我们给**拥有更高精确度**（更小 $$\epsilon_k$$）的效应量的研究**更大的权重**，因为这些研究提供了对 $$\theta_k$$ 更精确的估计 ([L. Hedges and Olkin 2014](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-hedges2014statistical)) 
 
 </aside>
+
+<a id="13-标准误se的计算"></a>
 
 - 因为我们不可能知道整个群体的 **`True effect size`**（总会有测量误差的存在，导致我们的观测效应量只能是一个分布，**`SE`** 越小的研究说明其对于真实值的估计越精确），所以 SE 也不知道，然而，我们可以用统计理论来近似抽样误差。使用 **`stantadard error`** ，计算公式如下：
     
@@ -87,6 +136,8 @@ $$
 - **`n`**
 
 [SD的计算](https://www.notion.so/SD-1f9980f4c6e3801e88c2c715d72b6ac2?pvs=21)
+
+<a id="14-标准差sd的计算步骤"></a>
 
 1. **计算公式：**
 
@@ -167,6 +218,8 @@ $$
 SE = \frac{2.83}{\sqrt{5}} = 1.266
 $$
 
+<a id="15-样本量与标准误的关系"></a>
+
 现在，我们在R中使用 **`rnorm`** 函数，在一个已知分布的群体中（normality distribution）随机抽取既定均值，标准差和N出来：
 
 1. notable, The `rnorm` function has a random component, so to make results reproducible, we have to set a **seed** first. 
@@ -198,8 +251,13 @@ $$
 
 所以我们给样本量更大的研究更大的权重，因为观测效应量更趋向于真实效应量。
 
+<aside>
+
 - 观察到的效应量和真实的效应量之间的差异是由于抽样误差导致的。
 - 加权分析，对于样本量更大和标准误更小的研究赋予更大的权重。
+</aside>
+
+<a id="2-组间均值差-md"></a>
 
 # **2. Between-Group Mean Difference**
 
@@ -215,6 +273,8 @@ $$
 - 同一结局指标测量单位时使用 `MD`：In meta-analyses, mean differences can only be used when **all** the studies measured the outcome of interest on **exactly** the same scale. Weight, for example, is nearly always measured in kilograms in scientific research; and in diabetology, the HbA1c value is commonly used to measure the blood sugar.
 
 **均值差定义为第1组的均值减去第2组的均值：**
+
+<a id="21-md的定义"></a>
 
 $$
 MD_{\text{between}} = \bar{x}_1 - \bar{x}_2
@@ -233,6 +293,8 @@ s_{\text{pooled}} = \sqrt{ \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{(n_1 - 1) + (n
 $$
 
 - 但一般来说，为消除基线的差异带来的结果不可比性，取前后测的差值进行组间比较：
+
+<a id="22-前后测差值与差值标准差"></a>
 
 前后测差值的计算方法：
 
@@ -296,6 +358,8 @@ se
 
 看起来很复杂对吗？但不需要过度担心，你只需要在数据中准备好下面几列：
 
+<a id="23-md所需数据"></a>
+
 - **`n.e`**. The number of observations in the intervention/experimental group.
 - **`mean.e`**. The mean of the intervention/experimental group.
 - **`sd.e`**. The standard deviation in the intervention/experimental group.
@@ -303,11 +367,15 @@ se
 - **`mean.c`**. The mean of the control group.
 - **`sd.c`**. The standard deviation in the control group.
 
+<a id="3-组间标准化均值差-smd"></a>
+
 # **3. Between-Group Standardized Mean Difference**
 
 1. 计算cohend’s d
 2. 校正为hedges’s g
 3. 可以轻松的在meta和metafor内完成
+
+<a id="31-smd的定义与解释"></a>
 
 **`SMD`** 也称为 **`Cohen’s d`**（即没有被校正的 **`g`**）, 通过两组之间的差值dividing合并后的标准差即
 
@@ -335,6 +403,8 @@ $$SMD_{\text{between}} = 1$$ 表示两组均值相差一个样本标准差：
 | **`SMD ≈ 0.50:`** | 🟡 **效应中等** |
 | **`SMD ≈ 0.80:`** | 🔴 **效应大** |
 
+<a id="32-smd的标准误"></a>
+
 The **`SE`** of $$SMD_{\text{between}}$$ can be calculated using this formula ([Borenstein et al. 2011](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/references.html#ref-borenstein2011introduction))：
 
 $$
@@ -342,6 +412,8 @@ SE_{SMD_{\text{between}}} = \sqrt{ \frac{n_1 + n_2}{n_1 n_2} + \frac{SMD_{\text{
 $$
 
 所以到这里我们已经知道如何计算 $$SMD_{\text{between}}$$ 和 $$SE_{SMD_{\text{between}}}$$，这样每个研究的标准化均值差和相应的标准误已知，当每个研究都计算出相应的 $$yi$$ 和 $$vi$$ 后，就可以进行效应量合并了。
+
+<a id="33-smd手算与r结果"></a>
 
 是时候在`R`中试一试：
 
@@ -372,15 +444,14 @@ Effect Size Calculation for Meta Analysis
 ##            [...]
 ```
 
-让我理清楚计算的过程：
+**让我理清楚计算的过程：**
 
-1. 我提供了原始数据：（在真实世界中可能需要先计算单个组的前后测组间均值差，以及前测后测的均值差的相应标准差）
+1. **我提供了原始数据：（在真实世界中可能需要先计算单个组的前后测组间均值差，以及前测后测的均值差的相应标准差）**
 
 | 组别 | 样本量 n | 平均值 m | 标准差 sd |
 | --- | --- | --- | --- |
 | 组1 | 100 | 50 | 10 |
 | 组2 | 100 | 60 | 10 |
-
 1. 效应量的计算公式是：
 
 $$
@@ -456,9 +527,15 @@ Effect Size Calculation for Meta Analysis
 ##     [...]
 ```
 
+<aside>
+
 **如何解释结果？**
 
 注意所选的效应量是Lower is better 还是Higher is better，如果不统一会导致严重的错误出现。
+
+</aside>
+
+<a id="34-smd所需数据"></a>
 
 计算 $$SMD_{\text{between}}$$ 和 $$SE_{SMD_{\text{between}}}$$ 所需的数据准备和上述的 $$MD_{\text{between}}$$ 和 $$SE_{MD_{\text{between}}}$$ 一致：
 
@@ -468,6 +545,8 @@ Effect Size Calculation for Meta Analysis
 - **`n.c`**. The number of observations in the control group.
 - **`mean.c`**. The mean of the control group.
 - **`sd.c`**. The standard deviation in the control group.
+
+<a id="4-效应量校正"></a>
 
 # **Effect Size Correction**
 
@@ -481,6 +560,8 @@ $$
 - **In this chapter, we will cover :**
     1. **three commonly used effect size correction procedures**, 
     2. and **how we can implement them in *R***.
+
+<a id="41-小样本偏差与hedges-g"></a>
 
 **3.4.1 Small Sample Bias**
 观测到小样本更可能观测到大效应量（特别是 $$n \le 20$$），这种小样本偏差意味着当研究的总样本量很小时，SMD 系统地高估了真实效应量的大小。所以需要对小样本偏倚进行校正，也就是将 **`SMD/Cohen’s d`** 校正为 **`Hedge's g`**，校正计算公式如下：
@@ -510,6 +591,8 @@ g
 ## [1] 0.4864865
 ```
 
+<a id="5-分析单位问题"></a>
+
 # **The Unit-of-Analysis Problem**
 
 - It is not uncommon that a study contributes **more than one effect size** to our meta-analysis.
@@ -527,6 +610,8 @@ g
     
     It needs to be comparable, computable, reliable and interpretable.
     
+
+<a id="6-小结"></a>
 
 # **Summary**
 
