@@ -52,14 +52,21 @@ This is the first note in my reading series on *Doing Meta-Analysis in R: A Hand
 - [引用本指南](https://doing-meta.guide/citing-this-guide-1)
 - [参考文献](https://doing-meta.guide/references)
 
-### 本页内容
-
-- [欢迎！](#section-welcome)
-- [开源仓库](#section-open-source-repository)
-- [如何使用本指南](#section-how-to-use-the-guide)
-- [参与贡献](#section-contributing)
-- [引用本指南](#section-citing-this-guide)
-- [请同时引用相关软件包](#section-cite-the-packages)
+<aside class="sidebar__right">
+  <nav class="toc">
+    <header>
+      <h4 class="nav__title"><i class="fa fa-file-text"></i> On This Page</h4>
+    </header>
+    <ul class="toc__menu" id="markdown-toc">
+      <li><a href="#section-welcome">欢迎！</a></li>
+      <li><a href="#section-open-source-repository">开源仓库</a></li>
+      <li><a href="#section-how-to-use-the-guide">如何使用本指南</a></li>
+      <li><a href="#section-contributing">参与贡献</a></li>
+      <li><a href="#section-citing-this-guide">引用本指南</a></li>
+      <li><a href="#section-cite-the-packages">请同时引用相关软件包</a></li>
+    </ul>
+  </nav>
+</aside>
 
 <a id="section-welcome"></a>
 ## 欢迎！
