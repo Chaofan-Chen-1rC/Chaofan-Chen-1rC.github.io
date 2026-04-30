@@ -9,24 +9,37 @@ tags:
   - doing-meta-analysis-in-r
 ---
 
-## 本页内容
+<aside class="sidebar__right">
+  <nav class="toc">
+    <header>
+      <h4 class="nav__title"><i class="fa fa-file-text"></i> 本页内容</h4>
+    </header>
+    <ul class="toc__menu" id="markdown-toc">
+      <li><a href="#前言" id="markdown-toc-前言">前言</a></li>
+      <li><a href="#本书写给普通人" id="markdown-toc-本书写给普通人">本书写给普通人</a></li>
+      <li><a href="#本书涵盖的主题" id="markdown-toc-本书涵盖的主题">本书涵盖的主题</a></li>
+      <li><a href="#如何使用本书" id="markdown-toc-如何使用本书">如何使用本书</a>
+        <ul>
+          <li><a href="#工作流程" id="markdown-toc-工作流程">工作流程</a></li>
+          <li><a href="#配套-r-包" id="markdown-toc-配套-r-包">配套 R 包</a></li>
+          <li><a href="#文本框" id="markdown-toc-文本框">文本框</a></li>
+        </ul>
+      </li>
+      <li><a href="#约定" id="markdown-toc-约定">约定</a></li>
+      <li><a href="#当你卡住时该怎么办" id="markdown-toc-当你卡住时该怎么办">当你卡住时该怎么办</a>
+        <ul>
+          <li><a href="#不要惊慌" id="markdown-toc-不要惊慌">不要惊慌</a></li>
+          <li><a href="#google" id="markdown-toc-google">Google</a></li>
+          <li><a href="#stackoverflow-与-crossvalidated" id="markdown-toc-stackoverflow-与-crossvalidated">StackOverflow 与 CrossValidated</a></li>
+          <li><a href="#联系我们" id="markdown-toc-联系我们">联系我们</a></li>
+        </ul>
+      </li>
+      <li><a href="#致谢" id="markdown-toc-致谢">致谢</a></li>
+    </ul>
+  </nav>
+</aside>
 
-- [前言](#前言)
-- [本书写给普通人](#本书写给普通人)
-- [本书涵盖的主题](#本书涵盖的主题)
-- [如何使用本书](#如何使用本书)
-  - [工作流程](#工作流程)
-  - [配套 R 包](#配套-r-包)
-  - [文本框](#文本框)
-- [约定](#约定)
-- [当你卡住时该怎么办](#当你卡住时该怎么办)
-  - [不要惊慌](#不要惊慌)
-  - [Google](#google)
-  - [StackOverflow 与 CrossValidated](#stackoverflow-与-crossvalidated)
-  - [联系我们](#联系我们)
-- [致谢](#致谢)
-
-* * *
+<a id="前言"></a>
 
 > “问题之所以得到解决，并不是因为获得了新的信息，而是因为我们将那些早已知晓之事重新加以安排。”
 >
@@ -251,7 +264,3 @@ R 社区非常庞大，因此你遇到的问题，很可能之前已经有人遇
 此外，我们还要特别感谢精美的 {robvis} 包作者 Luke McGuinness。他为本书的配套网站撰写了关于偏倚风险可视化的附加章节。Luke，我们由衷感谢你持续不断地支持这一项目。
 
 最后但同样重要的是，我们要感谢 Lea Schuurmans、Paula Kuper 和 Antonia Sprenger，感谢她们在本书开发与编纂过程中给予的支持。
-
-Erlangen、Amsterdam、Kyoto 和 Munich
-
-Mathias、Pim、Toshi 与 David
