@@ -655,7 +655,7 @@ $$
 其中，$$\hat\theta_{*}$$ 表示在校正小样本研究效应后，**合并效应量**的估计。Rücker 方法使用极大似然来估计该式中的参数，包括校正后的真实效应 $$\hat\theta_*$$。此外，它还可以为每项研究 $$k$$ 给出一个“收缩后”的研究层面效应估计：
 
 $$
-\hat\theta_{{*}_k} =  \mu_* + \sqrt{\dfrac{\tau^2}{SE^2_k + \tau^2}}(\hat\theta_k - \mu_*)
+\hat\theta_{*,k} =  \mu_* + \sqrt{\dfrac{\tau^2}{SE^2_k + \tau^2}}(\hat\theta_k - \mu_*)
 $$
 
 这里的 $$SE^2_k$$ 是研究 $$k$$ 标准误的平方（即观察方差），$$\hat\theta_k$$ 是原始观察效应量。（这一公式可以从式 9.11 的更完整形式推导出来，技术性说明可见 [Rücker 等人的原文公式 2.4 到 2.6](https://doing-meta.guide/references#ref-rucker2011treatment)。）
