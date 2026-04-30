@@ -52,15 +52,15 @@ tags:
 
 .dmar-bookdown .container-fluid {
   margin: 0 auto;
-  max-width: 95rem;
+  max-width: 72rem;
 }
 
 .dmar-bookdown .row {
   align-items: start;
-  column-gap: 2rem;
+  column-gap: 3.25rem;
   display: grid;
-  grid-template-columns: minmax(12rem, 15rem) minmax(0, 45rem) minmax(10rem, 15rem);
-  justify-content: space-evenly;
+  grid-template-columns: minmax(0, 47rem) minmax(14rem, 18rem);
+  justify-content: center;
 }
 
 .dmar-bookdown main {
@@ -69,11 +69,7 @@ tags:
 }
 
 .dmar-bookdown .sidebar {
-  max-width: 15rem;
-}
-
-.dmar-bookdown .sidebar-book {
-  padding-bottom: 1rem;
+  max-width: 18rem;
 }
 
 .dmar-bookdown .sidebar h1,
@@ -90,9 +86,7 @@ tags:
   font-size: 0.9rem;
 }
 
-.dmar-bookdown .sidebar small,
-.dmar-bookdown .book-part,
-.dmar-bookdown .reading-note {
+.dmar-bookdown .sidebar small {
   color: var(--grey-color);
 }
 
@@ -106,15 +100,6 @@ tags:
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
-}
-
-.dmar-bookdown .book-part {
-  font-weight: 500;
-  margin-top: 1rem;
-}
-
-.dmar-bookdown .book-toc .active {
-  font-weight: 700;
 }
 
 .dmar-bookdown .book-extra {
@@ -247,9 +232,31 @@ tags:
   padding-top: 1rem;
 }
 
+.dmar-bookdown .reading-meta {
+  border-bottom: 1px solid var(--line-color);
+  color: var(--grey-color);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+}
+
+.dmar-bookdown .reading-meta p {
+  margin: 0 0 0.25rem;
+}
+
+.dmar-bookdown .sidebar-chapter {
+  border-left: 1px solid var(--line-color);
+  padding-left: 1rem;
+}
+
 .dmar-bookdown nav[data-toggle="toc"] .nav-link {
   display: block;
-  padding: 3px;
+  line-height: 1.45;
+  padding: 0.35rem 0.5rem;
+}
+
+.dmar-bookdown nav[data-toggle="toc"] li {
+  margin-bottom: 0.25rem;
 }
 
 .dmar-bookdown nav[data-toggle="toc"] .nav-link:hover {
@@ -258,6 +265,7 @@ tags:
 
 .dmar-bookdown nav[data-toggle="toc"] .nav-link.active {
   background-color: #eee;
+  border-radius: 0.2rem;
 }
 
 .dmar-bookdown footer {
@@ -294,15 +302,6 @@ tags:
   }
 }
 
-@media (min-width: 992px) {
-  .dmar-bookdown .sidebar-book {
-    max-height: 100vh;
-    overflow-y: auto;
-    position: sticky;
-    top: 0;
-  }
-}
-
 @media (min-width: 1200px) {
   .dmar-bookdown {
     font-size: 18px;
@@ -318,30 +317,16 @@ tags:
     max-width: 100%;
   }
 
-  .dmar-bookdown .sidebar-book {
-    background: #fafafa;
-    border: 1px solid var(--highlight-color);
-    border-radius: 0.2rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    margin: 1rem 0;
-    padding: 1rem;
-  }
-
-  .dmar-bookdown .book-toc {
-    column-count: 2;
-  }
-
-  .dmar-bookdown .sidebar h1 {
-    font-size: 1.5rem;
-    margin-top: 0;
+  .dmar-bookdown .sidebar-chapter {
+    border-left: 0;
+    border-top: 1px solid var(--line-color);
+    margin-top: 2rem;
+    padding-left: 0;
+    padding-top: 1rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  .dmar-bookdown .book-toc {
-    column-count: 1;
-  }
-
   .dmar-bookdown .sidebar-chapter {
     display: none;
   }
@@ -364,55 +349,12 @@ tags:
 <div class="dmar-bookdown">
   <div class="container-fluid">
     <div class="row">
-      <header class="sidebar sidebar-book">
-        <div class="dmar-title">
-          <h1><a href="https://doing-meta.guide/">Doing Meta-Analysis in R</a></h1>
-          <small>A Hands-on Guide</small>
-        </div>
-        <nav aria-label="Table of contents">
-          <h2>Table of contents</h2>
-          <ul class="book-toc">
-            <li><a class="active" href="https://doing-meta.guide/">欢迎！</a></li>
-            <li><a href="https://doing-meta.guide/preface">前言</a></li>
-            <li><a href="https://doing-meta.guide/about-the-authors">关于作者</a></li>
-            <li class="book-part">入门</li>
-            <li><a href="https://doing-meta.guide/intro"><span class="header-section-number">1</span> 引言</a></li>
-            <li><a href="https://doing-meta.guide/discovering-r"><span class="header-section-number">2</span> 探索 R</a></li>
-            <li class="book-part">R 中的 Meta 分析</li>
-            <li><a href="https://doing-meta.guide/effects"><span class="header-section-number">3</span> 效应量</a></li>
-            <li><a href="https://doing-meta.guide/pooling-es"><span class="header-section-number">4</span> 合并效应量</a></li>
-            <li><a href="https://doing-meta.guide/heterogeneity"><span class="header-section-number">5</span> 研究间异质性</a></li>
-            <li><a href="https://doing-meta.guide/forest"><span class="header-section-number">6</span> 森林图</a></li>
-            <li><a href="https://doing-meta.guide/subgroup"><span class="header-section-number">7</span> 亚组分析</a></li>
-            <li><a href="https://doing-meta.guide/metareg"><span class="header-section-number">8</span> Meta 回归</a></li>
-            <li><a href="https://doing-meta.guide/pub-bias"><span class="header-section-number">9</span> 发表偏倚</a></li>
-            <li class="book-part">高级方法</li>
-            <li><a href="https://doing-meta.guide/multilevel-ma"><span class="header-section-number">10</span> “多层级”Meta 分析</a></li>
-            <li><a href="https://doing-meta.guide/sem"><span class="header-section-number">11</span> 结构方程模型 Meta 分析</a></li>
-            <li><a href="https://doing-meta.guide/netwma"><span class="header-section-number">12</span> 网络 Meta 分析</a></li>
-            <li><a href="https://doing-meta.guide/bayesian-ma"><span class="header-section-number">13</span> 贝叶斯 Meta 分析</a></li>
-            <li class="book-part">实用工具</li>
-            <li><a href="https://doing-meta.guide/power"><span class="header-section-number">14</span> 功效分析</a></li>
-            <li><a href="https://doing-meta.guide/risk-of-bias-plots"><span class="header-section-number">15</span> 偏倚风险图</a></li>
-            <li><a href="https://doing-meta.guide/reporting-reproducibility"><span class="header-section-number">16</span> 报告与可重复性</a></li>
-            <li><a href="https://doing-meta.guide/es-calc"><span class="header-section-number">17</span> 效应量计算与转换</a></li>
-            <li class="book-part">附录</li>
-            <li><a href="https://doing-meta.guide/qanda"><span class="header-section-number">A</span> 问答</a></li>
-            <li><a href="https://doing-meta.guide/formula"><span class="header-section-number">B</span> 效应量公式</a></li>
-            <li><a href="https://doing-meta.guide/symbollist"><span class="header-section-number">C</span> 符号列表</a></li>
-            <li><a href="https://doing-meta.guide/attr"><span class="header-section-number">D</span> R 与软件包信息</a></li>
-            <li><a href="https://doing-meta.guide/corrections"><span class="header-section-number">E</span> 更正与备注</a></li>
-            <li><a href="https://doing-meta.guide/citing-this-guide-1">引用本指南</a></li>
-            <li><a href="https://doing-meta.guide/references">参考文献</a></li>
-          </ul>
-        </nav>
-        <div class="book-extra">
-          <p class="reading-note">This is the first note in my reading series on <em>Doing Meta-Analysis in R: A Hands-on Guide</em>.</p>
+      <main id="content">
+        <div class="reading-meta">
+          <p>This is the first note in my reading series on <em>Doing Meta-Analysis in R: A Hands-on Guide</em>.</p>
           <p>来源页面：<a href="https://doing-meta.guide/">https://doing-meta.guide/</a></p>
         </div>
-      </header>
 
-      <main id="content">
         <section id="section-welcome">
           <h1>欢迎！<a class="anchor" aria-label="anchor" href="#section-welcome">#</a></h1>
           <hr>
