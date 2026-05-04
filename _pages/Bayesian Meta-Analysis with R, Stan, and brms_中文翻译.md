@@ -11,7 +11,7 @@ tags:
 
 # Bayesian Meta-Analysis with R, Stan, and brms
 
-*Meta 分析是贝叶斯多层模型的一个特例*
+*Meta 分析是贝叶斯多层模型的一个特例 6.0*
 
 ## 导航
 
