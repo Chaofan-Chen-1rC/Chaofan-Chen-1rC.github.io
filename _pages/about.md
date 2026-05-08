@@ -11,7 +11,7 @@ I'm a master’s student at the [Division of Sports Science and Physical Educati
 My professional and research interests are:  
 - physical activity and health outcomes.
 - systematic review and meta-research.
-- cooling and performance in the heat.
+- cooling and exercise performance in the heat.
 - sleep, mental health and cognitive function.
 
 My research focuses on the health effects and evidence synthesis of physical activity interventions across populations. I am particularly interested in using meta-analysis, network meta-analysis, and systematic reviews to evaluate how various types of exercise impact metabolic and visceral adipose tissue in individuals with overweight or obesity.
