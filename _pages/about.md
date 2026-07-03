@@ -74,7 +74,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
       </a><br>
       <b>Chen C</b>, Zhang D, Ye M, You Y, Song Y, Chen X.<br>
       <i>International Journal of Obesity</i>, 2025, 49(2):214-225.<br>
-      <strong>Impact factor</strong>: 4.2 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+      <strong>Impact factor</strong>: 5.4 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
     </td>
   </tr>
 </table>
@@ -106,7 +106,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
       </a><br>
       You Y, Zheng K, Ablitip A, Wang D, <b>Chen C</b>, Liu Y, Chen Y, Ma X.<br>
       <i>Journal of Adolescent Health</i>, 2025 Jul;77(1):84–93.<br>
-      <strong>Impact factor</strong>: 3.95 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+      <strong>Impact factor</strong>: 4.5 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
     </td>
   </tr>
 </table>
