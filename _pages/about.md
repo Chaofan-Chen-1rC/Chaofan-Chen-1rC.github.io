@@ -122,7 +122,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
       </a><br>
       Liu G, Li T, <b>Chen C</b>, Xiao N.<br>
       <i>Journal of Diabetes Research</i>, 2025, 2025(1):5164503.<br>
-      <strong>Impact factor</strong>: N/A &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+      <strong>Impact factor</strong>: 3.5 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
     </td>
   </tr>
 </table>
@@ -154,7 +154,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
       </a><br>
       陈晓可, 张栋, <b>陈超凡</b>, 曹春梅.<br>
       <i>首都体育学院学报</i>, 2024(3):321-333.<br>
-      <strong>Impact factor</strong>: N/A &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+      <strong>Impact factor</strong>: 6.231 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
     </td>
   </tr>
 </table>
@@ -170,7 +170,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
       </a><br>
       陈晓可, 历建宇, <b>陈超凡</b>, 曹春梅.<br>
       <i>中国循证医学杂志</i>, 2024, 24(5):565-571.<br>
-      <strong>Impact factor</strong>: N/A &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+      <strong>Impact factor</strong>: 1.760 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
     </td>
   </tr>
 </table>
