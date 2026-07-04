@@ -1,14 +1,13 @@
 ---
-title: "Paper Title Number 2"
+title: "运动干预对超重或肥胖个体慢性炎症反应影响的系统综述和Meta分析"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/exercise-intervention-chronic-inflammatory-response-overweight-obesity
+excerpt: "Impact factor: 1.69. Published."
+date: 2025-03-01
+venue: "中国运动医学杂志"
+paperurl: "https://doi.org/10.16038/j.1000-6710.2025.03.002"
+citation: "陈超凡, 陈晓可, 宋以玲, 等. (2025). &quot;运动干预对超重或肥胖个体慢性炎症反应影响的系统综述和Meta分析.&quot; <i>中国运动医学杂志</i>, 44(03):225-236."
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Impact factor: 1.69. Status: Published.

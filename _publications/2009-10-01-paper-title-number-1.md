@@ -1,14 +1,13 @@
 ---
-title: "Paper Title Number 1"
+title: "Effects of various exercise types on inflammatory response in individuals with overweight and obesity"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/effects-exercise-types-inflammatory-response-overweight-obesity
+excerpt: "Impact factor: 5.4. Published."
+date: 2025-02-01
+venue: "International Journal of Obesity"
+paperurl: "https://doi.org/10.1038/s41366-024-01649-6"
+citation: "Chen C, Zhang D, Ye M, You Y, Song Y, Chen X. (2025). &quot;Effects of various exercise types on inflammatory response in individuals with overweight and obesity.&quot; <i>International Journal of Obesity</i>, 49(2):214-225."
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+
+Impact factor: 5.4. Status: Published.
