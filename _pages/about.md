@@ -110,3 +110,83 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
     </td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <td width="280">
+      <img src="/images/paper4.png" width="250">
+    </td>
+    <td>
+      <a href="https://doi.org/10.1155/jdr/5164503">
+        <b>Health-Related Quality of Life and Psychosocial Outcomes in Patients With Type 2 Diabetes Mellitus: A Bibliometric Analysis</b>
+      </a><br>
+      Liu G, Li T, <b>Chen C</b>, Xiao N.<br>
+      <i>Journal of Diabetes Research</i>, 2025, 2025(1):5164503.<br>
+      <strong>Impact factor</strong>: N/A &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="280">
+      <img src="/images/paper5.png" width="250">
+    </td>
+    <td>
+      <a href="https://doi.org/10.1007/s00421-026-06241-6">
+        <b>Investigation of brain activation and functional connectivity characteristics following tennis-induced acute fatigue: evidence from fNIRS</b>
+      </a><br>
+      Chen X, Song Y, <b>Chen C</b>, Chen J, Ye Z, Cao C.<br>
+      <i>European Journal of Applied Physiology</i>, 2026, online first.<br>
+      <strong>Impact factor</strong>: 2.9 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="280">
+      <img src="/images/paper6.png" width="250">
+    </td>
+    <td>
+      <a href="http://dianda.cqvip.com/Qikan/Article/Detail?id=7112548819">
+        <b>高强度功能性训练与传统单一训练模式的绩效比较研究系统综述——基于运动素质、生理机能和身体成分测试</b>
+      </a><br>
+      陈晓可, 张栋, <b>陈超凡</b>, 曹春梅.<br>
+      <i>首都体育学院学报</i>, 2024(3):321-333.<br>
+      <strong>Impact factor</strong>: N/A &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="280">
+      <img src="/images/paper7.png" width="250">
+    </td>
+    <td>
+      <a href="https://doi.org/10.7507/1672-2531.202306137">
+        <b>不同运动类型对超重或肥胖人群炎症因子影响的网状Meta分析</b>
+      </a><br>
+      陈晓可, 历建宇, <b>陈超凡</b>, 曹春梅.<br>
+      <i>中国循证医学杂志</i>, 2024, 24(5):565-571.<br>
+      <strong>Impact factor</strong>: N/A &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="280">
+      <img src="/images/paper8.png" width="250">
+    </td>
+    <td>
+      <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1809819/abstract">
+        <b>The Role of General Self-Efficacy and Generalized Anxiety Symptoms in the Relationship Between Exercise Adherence and Psychological Resilience Among College Students</b>
+      </a><br>
+      Liu Q, Wei P, <b>Chen C</b>, Zhu W, Li H, Li B.<br>
+      <i>Frontiers in Psychology</i>, 2026, 17:1809819.<br>
+      <strong>Impact factor</strong>: 3.8 &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+    </td>
+  </tr>
+</table>
