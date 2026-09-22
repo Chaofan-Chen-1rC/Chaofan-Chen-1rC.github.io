@@ -82,7 +82,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 <table>
   <tr>
     <td width="280">
-      <img src="/images/paper9_world_map_v3.png" width="250" alt="World map showing the distribution of exercise studies and sample sizes (Figure 2A)">
+      <img src="/images/paper9_figure2_full_v4.png" width="250" alt="Full Figure 2: world map and charts of study characteristics">
     </td>
     <td>
       <a href="https://doi.org/10.1007/s11154-026-10082-1">
