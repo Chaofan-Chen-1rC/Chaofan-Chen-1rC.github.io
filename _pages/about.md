@@ -70,7 +70,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
     </td>
     <td>
       <a href="https://doi.org/10.1016/j.rehab.2026.102169">
-        <b>Comparative effectiveness of exercise interventions for axial spondyloarthritis: a systematic review and network meta-analysis</b>
+        <b>Comparative effectiveness of exercise interventions for axial spondyloarthritis</b>
       </a><br>
       Huo R, Huang W, Su N, <b>Chen C</b>, Wang P, Zeng X, Yu T, Zhou S.<br>
       <i>Annals of Physical and Rehabilitation Medicine</i>, 2026, 69(7):102169.<br>
@@ -82,11 +82,11 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 <table>
   <tr>
     <td width="280">
-      <img src="/images/paper9_v2.png" width="250" alt="Network meta-analysis of exercise modalities and visceral adipose tissue in children and adolescents (Figure 10)">
+      <img src="/images/paper9_world_map_v3.png" width="250" alt="World map showing the distribution of exercise studies and sample sizes (Figure 2A)">
     </td>
     <td>
       <a href="https://doi.org/10.1007/s11154-026-10082-1">
-        <b>Time-efficient exercise strategies to reduce visceral adipose tissue in children and adolescents with overweight or obesity: evidence from a pairwise and network meta-analysis</b>
+        <b>Time-efficient exercise strategies to reduce visceral adipose tissue in children and adolescents with overweight or obesity</b>
       </a><br>
       <b>Chen C</b>, Chen X, Chávez‑Guevara IA, Amaro-Gahete FJ, You Y, Yi Q, Tan Z, Jiang Y, Ji M, Castagna C, Póvoas S, Gasevic D, Liu J, Ma X.<br>
       <i>Reviews in Endocrine and Metabolic Disorders</i>, 2026, online first.<br>
