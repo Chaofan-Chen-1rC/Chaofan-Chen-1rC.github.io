@@ -66,6 +66,38 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 <table>
   <tr>
     <td width="280">
+      <img src="/images/paper10.png" width="250" alt="Network and forest plots for exercise interventions in axial spondyloarthritis">
+    </td>
+    <td>
+      <a href="https://doi.org/10.1016/j.rehab.2026.102169">
+        <b>Comparative effectiveness of exercise interventions for axial spondyloarthritis: a systematic review and network meta-analysis</b>
+      </a><br>
+      Huo R, Huang W, Su N, <b>Chen C</b>, Wang P, Zeng X, Yu T, Zhou S.<br>
+      <i>Annals of Physical and Rehabilitation Medicine</i>, 2026, 69(7):102169.<br>
+      <strong>Impact factor</strong>: 4.0 (2025) &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="280">
+      <img src="/images/paper9.png" width="250" alt="Graphical abstract of exercise strategies to reduce visceral adipose tissue in children and adolescents">
+    </td>
+    <td>
+      <a href="https://doi.org/10.1007/s11154-026-10082-1">
+        <b>Time-efficient exercise strategies to reduce visceral adipose tissue in children and adolescents with overweight or obesity: evidence from a pairwise and network meta-analysis</b>
+      </a><br>
+      <b>Chen C</b>, Chen X, Chávez‑Guevara IA, Amaro-Gahete FJ, You Y, Yi Q, Tan Z, Jiang Y, Ji M, Castagna C, Póvoas S, Gasevic D, Liu J, Ma X.<br>
+      <i>Reviews in Endocrine and Metabolic Disorders</i>, 2026, online first.<br>
+      <strong>Impact factor</strong>: 8.7 (2025) &nbsp;&nbsp;<span style="color:green;">✔ Published</span>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="280">
       <img src="/images/paper1.png" width="250">
     </td>
     <td>
