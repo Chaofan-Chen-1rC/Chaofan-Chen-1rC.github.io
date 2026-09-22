@@ -66,7 +66,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 <table>
   <tr>
     <td width="280">
-      <img src="/images/paper10.png" width="250" alt="Network and forest plots for exercise interventions in axial spondyloarthritis">
+      <img src="/images/paper10_v2.png" width="250" alt="BASDAI network plot for exercise interventions in axial spondyloarthritis (Figure 2A)">
     </td>
     <td>
       <a href="https://doi.org/10.1016/j.rehab.2026.102169">
@@ -82,7 +82,7 @@ I'm open to collaboration and scientific exchange. You can reach me at **chencf6
 <table>
   <tr>
     <td width="280">
-      <img src="/images/paper9.png" width="250" alt="Graphical abstract of exercise strategies to reduce visceral adipose tissue in children and adolescents">
+      <img src="/images/paper9_v2.png" width="250" alt="Network meta-analysis of exercise modalities and visceral adipose tissue in children and adolescents (Figure 10)">
     </td>
     <td>
       <a href="https://doi.org/10.1007/s11154-026-10082-1">
